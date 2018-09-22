@@ -5,8 +5,8 @@ Get a list of commands in php-libraries
 https://eua1024.github.io/php-library-commands
 
 ## Usage
-**HTML version:**<br>
+### HTML version:
 Open **get_commands_html.php** in browser
 
-**Command line version:**<br>
+### Command line version:
 ```php -f get_commands_cline.php```
