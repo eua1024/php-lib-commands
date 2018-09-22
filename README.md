@@ -4,7 +4,7 @@ https://eua1024.github.io/php-library-commands
 
 ## Usage
 **HTML version:**<br>
-Open php-file in browser
+Open *get_commands_html.php* in browser
 
 **Command line version:**<br>
-```php -f [php-file]```
+```php -f *get_commands_cline.php*```
