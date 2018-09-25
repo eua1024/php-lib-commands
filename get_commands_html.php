@@ -29,7 +29,6 @@
 </style>
 
 <h1>PHP version: <?php echo PHP_VERSION; ?></h1>
-<h3>Binary file: <?php echo PHP_BINARY; ?></h3>
 
 <div id="lib_list">
 	PHP libraries:

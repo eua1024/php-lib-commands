@@ -9,7 +9,6 @@
 	}
 
 	echo PHP_EOL."PHP version: ".phpversion().PHP_EOL;
-	echo "Binary file: ".PHP_BINARY.PHP_EOL;
 
 	foreach ($result as $library => $lib_commands) {
 		echo PHP_EOL."= PHP ".$library." library =".PHP_EOL;

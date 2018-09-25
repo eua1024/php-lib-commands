@@ -20,8 +20,7 @@
 
 <div><a href="https://eua1024.github.io/php-library-commands">&larr; to main page</a></div>
 
-<h1>PHP version: 5.3.29</h1>
-<h3>Binary file: PHP_BINARY</h3>
+<h1>PHP version: 5.6.37</h1>
 
 <div id="lib_list">
 	PHP libraries:
@@ -48,6 +47,7 @@
 			<a href="#iconv">iconv</a>
 			<a href="#imap">imap</a>
 			<a href="#interbase">interbase</a>
+			<a href="#intl">intl</a>
 			<a href="#json">json</a>
 			<a href="#mbstring">mbstring</a>
 			<a href="#mcrypt">mcrypt</a>
@@ -75,7 +75,6 @@
 			<a href="#xmlrpc">xmlrpc</a>
 			<a href="#xmlwriter">xmlwriter</a>
 			<a href="#zip">zip</a>
-			<a href="#intl">intl</a>
 		
 </div>
 
@@ -101,6 +100,7 @@
 					<li>property_exists</li>
 					<li>class_exists</li>
 					<li>interface_exists</li>
+					<li>trait_exists</li>
 					<li>class_alias</li>
 					<li>get_included_files</li>
 					<li>get_required_files</li>
@@ -116,6 +116,7 @@
 					<li>set_exception_handler</li>
 					<li>restore_exception_handler</li>
 					<li>get_declared_classes</li>
+					<li>get_declared_traits</li>
 					<li>get_declared_interfaces</li>
 					<li>get_defined_functions</li>
 					<li>get_defined_vars</li>
@@ -147,7 +148,9 @@
 					<li>localtime</li>
 					<li>getdate</li>
 					<li>date_create</li>
+					<li>date_create_immutable</li>
 					<li>date_create_from_format</li>
+					<li>date_create_immutable_from_format</li>
 					<li>date_parse</li>
 					<li>date_parse_from_format</li>
 					<li>date_get_last_errors</li>
@@ -192,6 +195,11 @@
 			</ul>
 	<h2 id="openssl">PHP openssl library: <a href="#">&uarr;</a></h2>
 	<ul>
+					<li>openssl_get_cert_locations</li>
+					<li>openssl_spki_new</li>
+					<li>openssl_spki_verify</li>
+					<li>openssl_spki_export</li>
+					<li>openssl_spki_export_challenge</li>
 					<li>openssl_pkey_free</li>
 					<li>openssl_pkey_new</li>
 					<li>openssl_pkey_export</li>
@@ -208,6 +216,7 @@
 					<li>openssl_x509_checkpurpose</li>
 					<li>openssl_x509_check_private_key</li>
 					<li>openssl_x509_export</li>
+					<li>openssl_x509_fingerprint</li>
 					<li>openssl_x509_export_to_file</li>
 					<li>openssl_pkcs12_export</li>
 					<li>openssl_pkcs12_export_to_file</li>
@@ -226,6 +235,7 @@
 					<li>openssl_verify</li>
 					<li>openssl_seal</li>
 					<li>openssl_open</li>
+					<li>openssl_pbkdf2</li>
 					<li>openssl_pkcs7_verify</li>
 					<li>openssl_pkcs7_decrypt</li>
 					<li>openssl_pkcs7_sign</li>
@@ -274,8 +284,11 @@
 					<li>gzdeflate</li>
 					<li>gzinflate</li>
 					<li>gzencode</li>
-					<li>ob_gzhandler</li>
+					<li>gzdecode</li>
+					<li>zlib_encode</li>
+					<li>zlib_decode</li>
 					<li>zlib_get_coding_type</li>
+					<li>ob_gzhandler</li>
 			</ul>
 	<h2 id="bcmath">PHP bcmath library: <a href="#">&uarr;</a></h2>
 	<ul>
@@ -350,6 +363,12 @@
 					<li>curl_error</li>
 					<li>curl_errno</li>
 					<li>curl_close</li>
+					<li>curl_strerror</li>
+					<li>curl_multi_strerror</li>
+					<li>curl_reset</li>
+					<li>curl_escape</li>
+					<li>curl_unescape</li>
+					<li>curl_pause</li>
 					<li>curl_multi_init</li>
 					<li>curl_multi_add_handle</li>
 					<li>curl_multi_remove_handle</li>
@@ -358,6 +377,11 @@
 					<li>curl_multi_getcontent</li>
 					<li>curl_multi_info_read</li>
 					<li>curl_multi_close</li>
+					<li>curl_multi_setopt</li>
+					<li>curl_share_init</li>
+					<li>curl_share_close</li>
+					<li>curl_share_setopt</li>
+					<li>curl_file_create</li>
 			</ul>
 	<h2 id="dom">PHP dom library: <a href="#">&uarr;</a></h2>
 	<ul>
@@ -455,6 +479,7 @@
 					<li>imagecreatetruecolor</li>
 					<li>imageistruecolor</li>
 					<li>imagetruecolortopalette</li>
+					<li>imagepalettetotruecolor</li>
 					<li>imagesetthickness</li>
 					<li>imagefilledarc</li>
 					<li>imagefilledellipse</li>
@@ -466,11 +491,20 @@
 					<li>imagecolorexactalpha</li>
 					<li>imagecopyresampled</li>
 					<li>imagerotate</li>
+					<li>imageflip</li>
 					<li>imageantialias</li>
+					<li>imagecrop</li>
+					<li>imagecropauto</li>
+					<li>imagescale</li>
+					<li>imageaffine</li>
+					<li>imageaffinematrixconcat</li>
+					<li>imageaffinematrixget</li>
+					<li>imagesetinterpolation</li>
 					<li>imagesettile</li>
 					<li>imagesetbrush</li>
 					<li>imagesetstyle</li>
 					<li>imagecreatefrompng</li>
+					<li>imagecreatefromwebp</li>
 					<li>imagecreatefromgif</li>
 					<li>imagecreatefromjpeg</li>
 					<li>imagecreatefromwbmp</li>
@@ -479,6 +513,7 @@
 					<li>imagecreatefromgd2</li>
 					<li>imagecreatefromgd2part</li>
 					<li>imagepng</li>
+					<li>imagewebp</li>
 					<li>imagegif</li>
 					<li>imagejpeg</li>
 					<li>imagewbmp</li>
@@ -540,6 +575,8 @@
 	<h2 id="gmp">PHP gmp library: <a href="#">&uarr;</a></h2>
 	<ul>
 					<li>gmp_init</li>
+					<li>gmp_import</li>
+					<li>gmp_export</li>
 					<li>gmp_intval</li>
 					<li>gmp_strval</li>
 					<li>gmp_add</li>
@@ -556,6 +593,8 @@
 					<li>gmp_fact</li>
 					<li>gmp_sqrt</li>
 					<li>gmp_sqrtrem</li>
+					<li>gmp_root</li>
+					<li>gmp_rootrem</li>
 					<li>gmp_pow</li>
 					<li>gmp_powm</li>
 					<li>gmp_perfect_square</li>
@@ -568,15 +607,17 @@
 					<li>gmp_cmp</li>
 					<li>gmp_sign</li>
 					<li>gmp_random</li>
+					<li>gmp_random_bits</li>
+					<li>gmp_random_range</li>
 					<li>gmp_and</li>
 					<li>gmp_or</li>
 					<li>gmp_com</li>
 					<li>gmp_xor</li>
 					<li>gmp_setbit</li>
 					<li>gmp_clrbit</li>
+					<li>gmp_testbit</li>
 					<li>gmp_scan0</li>
 					<li>gmp_scan1</li>
-					<li>gmp_testbit</li>
 					<li>gmp_popcount</li>
 					<li>gmp_hamdist</li>
 					<li>gmp_nextprime</li>
@@ -594,6 +635,8 @@
 					<li>hash_final</li>
 					<li>hash_copy</li>
 					<li>hash_algos</li>
+					<li>hash_pbkdf2</li>
+					<li>hash_equals</li>
 					<li>mhash_keygen_s2k</li>
 					<li>mhash_get_block_size</li>
 					<li>mhash_get_hash_name</li>
@@ -669,6 +712,8 @@
 					<li>imap_search</li>
 					<li>imap_utf7_decode</li>
 					<li>imap_utf7_encode</li>
+					<li>imap_utf8_to_mutf7</li>
+					<li>imap_mutf7_to_utf8</li>
 					<li>imap_mime_header_decode</li>
 					<li>imap_thread</li>
 					<li>imap_timeout</li>
@@ -788,11 +833,194 @@
 					<li>fbird_set_event_handler</li>
 					<li>fbird_free_event_handler</li>
 			</ul>
+	<h2 id="intl">PHP intl library: <a href="#">&uarr;</a></h2>
+	<ul>
+					<li>collator_create</li>
+					<li>collator_compare</li>
+					<li>collator_get_attribute</li>
+					<li>collator_set_attribute</li>
+					<li>collator_get_strength</li>
+					<li>collator_set_strength</li>
+					<li>collator_sort</li>
+					<li>collator_sort_with_sort_keys</li>
+					<li>collator_asort</li>
+					<li>collator_get_locale</li>
+					<li>collator_get_error_code</li>
+					<li>collator_get_error_message</li>
+					<li>collator_get_sort_key</li>
+					<li>numfmt_create</li>
+					<li>numfmt_format</li>
+					<li>numfmt_parse</li>
+					<li>numfmt_format_currency</li>
+					<li>numfmt_parse_currency</li>
+					<li>numfmt_set_attribute</li>
+					<li>numfmt_get_attribute</li>
+					<li>numfmt_set_text_attribute</li>
+					<li>numfmt_get_text_attribute</li>
+					<li>numfmt_set_symbol</li>
+					<li>numfmt_get_symbol</li>
+					<li>numfmt_set_pattern</li>
+					<li>numfmt_get_pattern</li>
+					<li>numfmt_get_locale</li>
+					<li>numfmt_get_error_code</li>
+					<li>numfmt_get_error_message</li>
+					<li>normalizer_normalize</li>
+					<li>normalizer_is_normalized</li>
+					<li>locale_get_default</li>
+					<li>locale_set_default</li>
+					<li>locale_get_primary_language</li>
+					<li>locale_get_script</li>
+					<li>locale_get_region</li>
+					<li>locale_get_keywords</li>
+					<li>locale_get_display_script</li>
+					<li>locale_get_display_region</li>
+					<li>locale_get_display_name</li>
+					<li>locale_get_display_language</li>
+					<li>locale_get_display_variant</li>
+					<li>locale_compose</li>
+					<li>locale_parse</li>
+					<li>locale_get_all_variants</li>
+					<li>locale_filter_matches</li>
+					<li>locale_canonicalize</li>
+					<li>locale_lookup</li>
+					<li>locale_accept_from_http</li>
+					<li>msgfmt_create</li>
+					<li>msgfmt_format</li>
+					<li>msgfmt_format_message</li>
+					<li>msgfmt_parse</li>
+					<li>msgfmt_parse_message</li>
+					<li>msgfmt_set_pattern</li>
+					<li>msgfmt_get_pattern</li>
+					<li>msgfmt_get_locale</li>
+					<li>msgfmt_get_error_code</li>
+					<li>msgfmt_get_error_message</li>
+					<li>datefmt_create</li>
+					<li>datefmt_get_datetype</li>
+					<li>datefmt_get_timetype</li>
+					<li>datefmt_get_calendar</li>
+					<li>datefmt_get_calendar_object</li>
+					<li>datefmt_set_calendar</li>
+					<li>datefmt_get_locale</li>
+					<li>datefmt_get_timezone_id</li>
+					<li>datefmt_set_timezone_id</li>
+					<li>datefmt_get_timezone</li>
+					<li>datefmt_set_timezone</li>
+					<li>datefmt_get_pattern</li>
+					<li>datefmt_set_pattern</li>
+					<li>datefmt_is_lenient</li>
+					<li>datefmt_set_lenient</li>
+					<li>datefmt_format</li>
+					<li>datefmt_format_object</li>
+					<li>datefmt_parse</li>
+					<li>datefmt_localtime</li>
+					<li>datefmt_get_error_code</li>
+					<li>datefmt_get_error_message</li>
+					<li>grapheme_strlen</li>
+					<li>grapheme_strpos</li>
+					<li>grapheme_stripos</li>
+					<li>grapheme_strrpos</li>
+					<li>grapheme_strripos</li>
+					<li>grapheme_substr</li>
+					<li>grapheme_strstr</li>
+					<li>grapheme_stristr</li>
+					<li>grapheme_extract</li>
+					<li>idn_to_ascii</li>
+					<li>idn_to_utf8</li>
+					<li>resourcebundle_create</li>
+					<li>resourcebundle_get</li>
+					<li>resourcebundle_count</li>
+					<li>resourcebundle_locales</li>
+					<li>resourcebundle_get_error_code</li>
+					<li>resourcebundle_get_error_message</li>
+					<li>transliterator_create</li>
+					<li>transliterator_create_from_rules</li>
+					<li>transliterator_list_ids</li>
+					<li>transliterator_create_inverse</li>
+					<li>transliterator_transliterate</li>
+					<li>transliterator_get_error_code</li>
+					<li>transliterator_get_error_message</li>
+					<li>intltz_create_time_zone</li>
+					<li>intltz_from_date_time_zone</li>
+					<li>intltz_create_default</li>
+					<li>intltz_get_id</li>
+					<li>intltz_get_gmt</li>
+					<li>intltz_get_unknown</li>
+					<li>intltz_create_enumeration</li>
+					<li>intltz_count_equivalent_ids</li>
+					<li>intltz_create_time_zone_id_enumeration</li>
+					<li>intltz_get_canonical_id</li>
+					<li>intltz_get_region</li>
+					<li>intltz_get_tz_data_version</li>
+					<li>intltz_get_equivalent_id</li>
+					<li>intltz_use_daylight_time</li>
+					<li>intltz_get_offset</li>
+					<li>intltz_get_raw_offset</li>
+					<li>intltz_has_same_rules</li>
+					<li>intltz_get_display_name</li>
+					<li>intltz_get_dst_savings</li>
+					<li>intltz_to_date_time_zone</li>
+					<li>intltz_get_error_code</li>
+					<li>intltz_get_error_message</li>
+					<li>intlcal_create_instance</li>
+					<li>intlcal_get_keyword_values_for_locale</li>
+					<li>intlcal_get_now</li>
+					<li>intlcal_get_available_locales</li>
+					<li>intlcal_get</li>
+					<li>intlcal_get_time</li>
+					<li>intlcal_set_time</li>
+					<li>intlcal_add</li>
+					<li>intlcal_set_time_zone</li>
+					<li>intlcal_after</li>
+					<li>intlcal_before</li>
+					<li>intlcal_set</li>
+					<li>intlcal_roll</li>
+					<li>intlcal_clear</li>
+					<li>intlcal_field_difference</li>
+					<li>intlcal_get_actual_maximum</li>
+					<li>intlcal_get_actual_minimum</li>
+					<li>intlcal_get_day_of_week_type</li>
+					<li>intlcal_get_first_day_of_week</li>
+					<li>intlcal_get_greatest_minimum</li>
+					<li>intlcal_get_least_maximum</li>
+					<li>intlcal_get_locale</li>
+					<li>intlcal_get_maximum</li>
+					<li>intlcal_get_minimal_days_in_first_week</li>
+					<li>intlcal_get_minimum</li>
+					<li>intlcal_get_time_zone</li>
+					<li>intlcal_get_type</li>
+					<li>intlcal_get_weekend_transition</li>
+					<li>intlcal_in_daylight_time</li>
+					<li>intlcal_is_equivalent_to</li>
+					<li>intlcal_is_lenient</li>
+					<li>intlcal_is_set</li>
+					<li>intlcal_is_weekend</li>
+					<li>intlcal_set_first_day_of_week</li>
+					<li>intlcal_set_lenient</li>
+					<li>intlcal_set_minimal_days_in_first_week</li>
+					<li>intlcal_equals</li>
+					<li>intlcal_from_date_time</li>
+					<li>intlcal_to_date_time</li>
+					<li>intlcal_get_repeated_wall_time_option</li>
+					<li>intlcal_get_skipped_wall_time_option</li>
+					<li>intlcal_set_repeated_wall_time_option</li>
+					<li>intlcal_set_skipped_wall_time_option</li>
+					<li>intlcal_get_error_code</li>
+					<li>intlcal_get_error_message</li>
+					<li>intlgregcal_create_instance</li>
+					<li>intlgregcal_set_gregorian_change</li>
+					<li>intlgregcal_get_gregorian_change</li>
+					<li>intlgregcal_is_leap_year</li>
+					<li>intl_get_error_code</li>
+					<li>intl_get_error_message</li>
+					<li>intl_is_failure</li>
+					<li>intl_error_name</li>
+			</ul>
 	<h2 id="json">PHP json library: <a href="#">&uarr;</a></h2>
 	<ul>
 					<li>json_encode</li>
 					<li>json_decode</li>
 					<li>json_last_error</li>
+					<li>json_last_error_msg</li>
 			</ul>
 	<h2 id="mbstring">PHP mbstring library: <a href="#">&uarr;</a></h2>
 	<ul>
@@ -841,6 +1069,7 @@
 					<li>mb_eregi</li>
 					<li>mb_ereg_replace</li>
 					<li>mb_eregi_replace</li>
+					<li>mb_ereg_replace_callback</li>
 					<li>mb_split</li>
 					<li>mb_ereg_match</li>
 					<li>mb_ereg_search</li>
@@ -984,6 +1213,7 @@
 	<ul>
 					<li>mysqli_affected_rows</li>
 					<li>mysqli_autocommit</li>
+					<li>mysqli_begin_transaction</li>
 					<li>mysqli_change_user</li>
 					<li>mysqli_character_set_name</li>
 					<li>mysqli_close</li>
@@ -996,6 +1226,7 @@
 					<li>mysqli_debug</li>
 					<li>mysqli_errno</li>
 					<li>mysqli_error</li>
+					<li>mysqli_error_list</li>
 					<li>mysqli_stmt_execute</li>
 					<li>mysqli_execute</li>
 					<li>mysqli_fetch_field</li>
@@ -1016,6 +1247,7 @@
 					<li>mysqli_get_charset</li>
 					<li>mysqli_get_client_info</li>
 					<li>mysqli_get_client_version</li>
+					<li>mysqli_get_links_stats</li>
 					<li>mysqli_get_host_info</li>
 					<li>mysqli_get_proto_info</li>
 					<li>mysqli_get_server_info</li>
@@ -1040,7 +1272,9 @@
 					<li>mysqli_real_escape_string</li>
 					<li>mysqli_real_query</li>
 					<li>mysqli_reap_async_query</li>
+					<li>mysqli_release_savepoint</li>
 					<li>mysqli_rollback</li>
+					<li>mysqli_savepoint</li>
 					<li>mysqli_select_db</li>
 					<li>mysqli_set_charset</li>
 					<li>mysqli_stmt_affected_rows</li>
@@ -1052,6 +1286,7 @@
 					<li>mysqli_stmt_data_seek</li>
 					<li>mysqli_stmt_errno</li>
 					<li>mysqli_stmt_error</li>
+					<li>mysqli_stmt_error_list</li>
 					<li>mysqli_stmt_fetch</li>
 					<li>mysqli_stmt_field_count</li>
 					<li>mysqli_stmt_free_result</li>
@@ -1114,6 +1349,7 @@
 					<li>spl_autoload_call</li>
 					<li>class_parents</li>
 					<li>class_implements</li>
+					<li>class_uses</li>
 					<li>spl_object_hash</li>
 					<li>iterator_to_array</li>
 					<li>iterator_count</li>
@@ -1194,6 +1430,10 @@
 					<li>session_set_cookie_params</li>
 					<li>session_get_cookie_params</li>
 					<li>session_write_close</li>
+					<li>session_abort</li>
+					<li>session_reset</li>
+					<li>session_status</li>
+					<li>session_register_shutdown</li>
 					<li>session_commit</li>
 			</ul>
 	<h2 id="shmop">PHP shmop library: <a href="#">&uarr;</a></h2>
@@ -1243,6 +1483,10 @@
 					<li>socket_shutdown</li>
 					<li>socket_last_error</li>
 					<li>socket_clear_error</li>
+					<li>socket_import_stream</li>
+					<li>socket_sendmsg</li>
+					<li>socket_recvmsg</li>
+					<li>socket_cmsg_space</li>
 					<li>socket_getopt</li>
 					<li>socket_setopt</li>
 			</ul>
@@ -1250,6 +1494,7 @@
 	<ul>
 					<li>constant</li>
 					<li>bin2hex</li>
+					<li>hex2bin</li>
 					<li>sleep</li>
 					<li>usleep</li>
 					<li>time_nanosleep</li>
@@ -1270,6 +1515,7 @@
 					<li>iptcparse</li>
 					<li>iptcembed</li>
 					<li>getimagesize</li>
+					<li>getimagesizefromstring</li>
 					<li>image_type_to_mime_type</li>
 					<li>image_type_to_extension</li>
 					<li>phpinfo</li>
@@ -1391,6 +1637,10 @@
 					<li>getlastmod</li>
 					<li>base64_decode</li>
 					<li>base64_encode</li>
+					<li>password_hash</li>
+					<li>password_get_info</li>
+					<li>password_needs_rehash</li>
+					<li>password_verify</li>
 					<li>convert_uuencode</li>
 					<li>convert_uudecode</li>
 					<li>abs</li>
@@ -1450,6 +1700,7 @@
 					<li>convert_cyr_string</li>
 					<li>get_current_user</li>
 					<li>set_time_limit</li>
+					<li>header_register_callback</li>
 					<li>get_cfg_var</li>
 					<li>get_magic_quotes_gpc</li>
 					<li>get_magic_quotes_runtime</li>
@@ -1481,6 +1732,7 @@
 					<li>header_remove</li>
 					<li>headers_sent</li>
 					<li>headers_list</li>
+					<li>http_response_code</li>
 					<li>connection_aborted</li>
 					<li>connection_status</li>
 					<li>ignore_user_abort</li>
@@ -1501,6 +1753,7 @@
 					<li>floatval</li>
 					<li>doubleval</li>
 					<li>strval</li>
+					<li>boolval</li>
 					<li>gettype</li>
 					<li>settype</li>
 					<li>is_null</li>
@@ -1577,6 +1830,7 @@
 					<li>stream_set_read_buffer</li>
 					<li>stream_set_write_buffer</li>
 					<li>set_file_buffer</li>
+					<li>stream_set_chunk_size</li>
 					<li>stream_set_blocking</li>
 					<li>socket_set_blocking</li>
 					<li>stream_get_meta_data</li>
@@ -1701,6 +1955,7 @@
 					<li>array_keys</li>
 					<li>array_values</li>
 					<li>array_count_values</li>
+					<li>array_column</li>
 					<li>array_reverse</li>
 					<li>array_reduce</li>
 					<li>array_pad</li>
@@ -1916,111 +2171,4 @@
 					<li>zip_entry_name</li>
 					<li>zip_entry_compressedsize</li>
 					<li>zip_entry_compressionmethod</li>
-			</ul>
-	<h2 id="intl">PHP intl library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>collator_create</li>
-					<li>collator_compare</li>
-					<li>collator_get_attribute</li>
-					<li>collator_set_attribute</li>
-					<li>collator_get_strength</li>
-					<li>collator_set_strength</li>
-					<li>collator_sort</li>
-					<li>collator_sort_with_sort_keys</li>
-					<li>collator_asort</li>
-					<li>collator_get_locale</li>
-					<li>collator_get_error_code</li>
-					<li>collator_get_error_message</li>
-					<li>collator_get_sort_key</li>
-					<li>numfmt_create</li>
-					<li>numfmt_format</li>
-					<li>numfmt_parse</li>
-					<li>numfmt_format_currency</li>
-					<li>numfmt_parse_currency</li>
-					<li>numfmt_set_attribute</li>
-					<li>numfmt_get_attribute</li>
-					<li>numfmt_set_text_attribute</li>
-					<li>numfmt_get_text_attribute</li>
-					<li>numfmt_set_symbol</li>
-					<li>numfmt_get_symbol</li>
-					<li>numfmt_set_pattern</li>
-					<li>numfmt_get_pattern</li>
-					<li>numfmt_get_locale</li>
-					<li>numfmt_get_error_code</li>
-					<li>numfmt_get_error_message</li>
-					<li>normalizer_normalize</li>
-					<li>normalizer_is_normalized</li>
-					<li>locale_get_default</li>
-					<li>locale_set_default</li>
-					<li>locale_get_primary_language</li>
-					<li>locale_get_script</li>
-					<li>locale_get_region</li>
-					<li>locale_get_keywords</li>
-					<li>locale_get_display_script</li>
-					<li>locale_get_display_region</li>
-					<li>locale_get_display_name</li>
-					<li>locale_get_display_language</li>
-					<li>locale_get_display_variant</li>
-					<li>locale_compose</li>
-					<li>locale_parse</li>
-					<li>locale_get_all_variants</li>
-					<li>locale_filter_matches</li>
-					<li>locale_canonicalize</li>
-					<li>locale_lookup</li>
-					<li>locale_accept_from_http</li>
-					<li>msgfmt_create</li>
-					<li>msgfmt_format</li>
-					<li>msgfmt_format_message</li>
-					<li>msgfmt_parse</li>
-					<li>msgfmt_parse_message</li>
-					<li>msgfmt_set_pattern</li>
-					<li>msgfmt_get_pattern</li>
-					<li>msgfmt_get_locale</li>
-					<li>msgfmt_get_error_code</li>
-					<li>msgfmt_get_error_message</li>
-					<li>datefmt_create</li>
-					<li>datefmt_get_datetype</li>
-					<li>datefmt_get_timetype</li>
-					<li>datefmt_get_calendar</li>
-					<li>datefmt_set_calendar</li>
-					<li>datefmt_get_locale</li>
-					<li>datefmt_get_timezone_id</li>
-					<li>datefmt_set_timezone_id</li>
-					<li>datefmt_get_pattern</li>
-					<li>datefmt_set_pattern</li>
-					<li>datefmt_is_lenient</li>
-					<li>datefmt_set_lenient</li>
-					<li>datefmt_format</li>
-					<li>datefmt_parse</li>
-					<li>datefmt_localtime</li>
-					<li>datefmt_get_error_code</li>
-					<li>datefmt_get_error_message</li>
-					<li>grapheme_strlen</li>
-					<li>grapheme_strpos</li>
-					<li>grapheme_stripos</li>
-					<li>grapheme_strrpos</li>
-					<li>grapheme_strripos</li>
-					<li>grapheme_substr</li>
-					<li>grapheme_strstr</li>
-					<li>grapheme_stristr</li>
-					<li>grapheme_extract</li>
-					<li>idn_to_ascii</li>
-					<li>idn_to_utf8</li>
-					<li>resourcebundle_create</li>
-					<li>resourcebundle_get</li>
-					<li>resourcebundle_count</li>
-					<li>resourcebundle_locales</li>
-					<li>resourcebundle_get_error_code</li>
-					<li>resourcebundle_get_error_message</li>
-					<li>transliterator_create</li>
-					<li>transliterator_create_from_rules</li>
-					<li>transliterator_list_ids</li>
-					<li>transliterator_create_inverse</li>
-					<li>transliterator_transliterate</li>
-					<li>transliterator_get_error_code</li>
-					<li>transliterator_get_error_message</li>
-					<li>intl_get_error_code</li>
-					<li>intl_get_error_message</li>
-					<li>intl_is_failure</li>
-					<li>intl_error_name</li>
 			</ul>
