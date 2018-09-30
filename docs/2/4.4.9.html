@@ -24,31 +24,33 @@
 
 <div><a href="https://eua1024.github.io/php-lib-commands">&larr; to main page</a></div>
 
-<h1>Commands list of php-libraries (variant 1)</h1>
+<h1>Commands list of php-libraries (variant 2)</h1>
 <a href="https://github.com/eua1024/php-lib-commands">https://github.com/eua1024/php-lib-commands</a>
 
 <h2>PHP version: 4.4.9</h2>
 <div id="lib_list">
 	PHP libraries:
-			<a href="#Core">Core</a>
+			<a href="#xslt">xslt</a>
 			<a href="#xml">xml</a>
 			<a href="#tokenizer">tokenizer</a>
 			<a href="#sysvshm">sysvshm</a>
 			<a href="#sysvsem">sysvsem</a>
 			<a href="#sysvmsg">sysvmsg</a>
 			<a href="#standard">standard</a>
-			<a href="#date">date</a>
 			<a href="#sockets">sockets</a>
 			<a href="#shmop">shmop</a>
 			<a href="#session">session</a>
 			<a href="#readline">readline</a>
 			<a href="#posix">posix</a>
+			<a href="#overload">overload</a>
 			<a href="#mysql">mysql</a>
 			<a href="#mcrypt">mcrypt</a>
 			<a href="#mbstring">mbstring</a>
 			<a href="#iconv">iconv</a>
 			<a href="#gd">gd</a>
 			<a href="#ftp">ftp</a>
+			<a href="#domxml">domxml</a>
+			<a href="#dbase">dbase</a>
 			<a href="#curl">curl</a>
 			<a href="#ctype">ctype</a>
 			<a href="#zlib">zlib</a>
@@ -56,48 +58,35 @@
 		
 </div>
 
-	<h2 id="Core"><a href="#Core">#</a> PHP Core library: <a href="#">&uarr;</a></h2>
+	<h2 id="xslt">
+		<a href="#xslt">#</a>
+		PHP xslt library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
-					<li>zend_version</li>
-					<li>func_num_args</li>
-					<li>func_get_arg</li>
-					<li>func_get_args</li>
-					<li>strlen</li>
-					<li>strcmp</li>
-					<li>strncmp</li>
-					<li>strcasecmp</li>
-					<li>strncasecmp</li>
-					<li>each</li>
-					<li>error_reporting</li>
-					<li>define</li>
-					<li>defined</li>
-					<li>get_class</li>
-					<li>get_parent_class</li>
-					<li>method_exists</li>
-					<li>class_exists</li>
-					<li>get_included_files</li>
-					<li>get_required_files</li>
-					<li>is_subclass_of</li>
-					<li>is_a</li>
-					<li>get_class_vars</li>
-					<li>get_object_vars</li>
-					<li>get_class_methods</li>
-					<li>trigger_error</li>
-					<li>user_error</li>
-					<li>set_error_handler</li>
-					<li>restore_error_handler</li>
-					<li>get_declared_classes</li>
-					<li>get_defined_functions</li>
-					<li>get_defined_vars</li>
-					<li>create_function</li>
-					<li>get_resource_type</li>
-					<li>get_loaded_extensions</li>
-					<li>extension_loaded</li>
-					<li>get_extension_funcs</li>
-					<li>get_defined_constants</li>
-					<li>debug_backtrace</li>
+					<li>xslt_create</li>
+					<li>xslt_set_sax_handlers</li>
+					<li>xslt_set_scheme_handlers</li>
+					<li>xslt_set_error_handler</li>
+					<li>xslt_set_base</li>
+					<li>xslt_set_encoding</li>
+					<li>xslt_set_log</li>
+					<li>xslt_process</li>
+					<li>xslt_error</li>
+					<li>xslt_errno</li>
+					<li>xslt_free</li>
+					<li>xslt_set_object</li>
+					<li>xslt_setopt</li>
+					<li>xslt_getopt</li>
+					<li>xslt_backend_version</li>
+					<li>xslt_backend_name</li>
+					<li>xslt_backend_info</li>
 			</ul>
-	<h2 id="xml"><a href="#xml">#</a> PHP xml library: <a href="#">&uarr;</a></h2>
+	<h2 id="xml">
+		<a href="#xml">#</a>
+		PHP xml library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>xml_parser_create</li>
 					<li>xml_parser_create_ns</li>
@@ -124,12 +113,20 @@
 					<li>utf8_encode</li>
 					<li>utf8_decode</li>
 			</ul>
-	<h2 id="tokenizer"><a href="#tokenizer">#</a> PHP tokenizer library: <a href="#">&uarr;</a></h2>
+	<h2 id="tokenizer">
+		<a href="#tokenizer">#</a>
+		PHP tokenizer library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>token_get_all</li>
 					<li>token_name</li>
 			</ul>
-	<h2 id="sysvshm"><a href="#sysvshm">#</a> PHP sysvshm library: <a href="#">&uarr;</a></h2>
+	<h2 id="sysvshm">
+		<a href="#sysvshm">#</a>
+		PHP sysvshm library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>shm_attach</li>
 					<li>shm_remove</li>
@@ -138,14 +135,22 @@
 					<li>shm_get_var</li>
 					<li>shm_remove_var</li>
 			</ul>
-	<h2 id="sysvsem"><a href="#sysvsem">#</a> PHP sysvsem library: <a href="#">&uarr;</a></h2>
+	<h2 id="sysvsem">
+		<a href="#sysvsem">#</a>
+		PHP sysvsem library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>sem_get</li>
 					<li>sem_acquire</li>
 					<li>sem_release</li>
 					<li>sem_remove</li>
 			</ul>
-	<h2 id="sysvmsg"><a href="#sysvmsg">#</a> PHP sysvmsg library: <a href="#">&uarr;</a></h2>
+	<h2 id="sysvmsg">
+		<a href="#sysvmsg">#</a>
+		PHP sysvmsg library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>msg_get_queue</li>
 					<li>msg_send</li>
@@ -154,12 +159,27 @@
 					<li>msg_stat_queue</li>
 					<li>msg_set_queue</li>
 			</ul>
-	<h2 id="standard"><a href="#standard">#</a> PHP standard library: <a href="#">&uarr;</a></h2>
+	<h2 id="standard">
+		<a href="#standard">#</a>
+		PHP standard library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>constant</li>
 					<li>bin2hex</li>
 					<li>sleep</li>
 					<li>usleep</li>
+					<li>time</li>
+					<li>mktime</li>
+					<li>gmmktime</li>
+					<li>strftime</li>
+					<li>gmstrftime</li>
+					<li>strtotime</li>
+					<li>date</li>
+					<li>gmdate</li>
+					<li>getdate</li>
+					<li>localtime</li>
+					<li>checkdate</li>
 					<li>flush</li>
 					<li>wordwrap</li>
 					<li>htmlspecialchars</li>
@@ -178,6 +198,8 @@
 					<li>phpinfo</li>
 					<li>phpversion</li>
 					<li>phpcredits</li>
+					<li>php_logo_guid</li>
+					<li>zend_logo_guid</li>
 					<li>php_sapi_name</li>
 					<li>php_uname</li>
 					<li>php_ini_scanned_files</li>
@@ -337,15 +359,25 @@
 					<li>get_current_user</li>
 					<li>set_time_limit</li>
 					<li>get_cfg_var</li>
+					<li>magic_quotes_runtime</li>
+					<li>set_magic_quotes_runtime</li>
 					<li>get_magic_quotes_gpc</li>
 					<li>get_magic_quotes_runtime</li>
+					<li>import_request_variables</li>
 					<li>error_log</li>
+					<li>call_user_func</li>
+					<li>call_user_func_array</li>
+					<li>call_user_method</li>
+					<li>call_user_method_array</li>
 					<li>serialize</li>
 					<li>unserialize</li>
 					<li>var_dump</li>
 					<li>var_export</li>
 					<li>debug_zval_dump</li>
 					<li>print_r</li>
+					<li>register_shutdown_function</li>
+					<li>register_tick_function</li>
+					<li>unregister_tick_function</li>
 					<li>highlight_file</li>
 					<li>show_source</li>
 					<li>highlight_string</li>
@@ -387,7 +419,14 @@
 					<li>is_object</li>
 					<li>is_scalar</li>
 					<li>is_callable</li>
+					<li>ereg</li>
+					<li>ereg_replace</li>
+					<li>eregi</li>
+					<li>eregi_replace</li>
+					<li>split</li>
+					<li>spliti</li>
 					<li>join</li>
+					<li>sql_regcase</li>
 					<li>dl</li>
 					<li>pclose</li>
 					<li>popen</li>
@@ -429,6 +468,7 @@
 					<li>get_meta_tags</li>
 					<li>stream_set_write_buffer</li>
 					<li>set_file_buffer</li>
+					<li>set_socket_blocking</li>
 					<li>stream_set_blocking</li>
 					<li>socket_set_blocking</li>
 					<li>stream_get_meta_data</li>
@@ -448,6 +488,7 @@
 					<li>opendir</li>
 					<li>closedir</li>
 					<li>chdir</li>
+					<li>chroot</li>
 					<li>getcwd</li>
 					<li>rewinddir</li>
 					<li>readdir</li>
@@ -485,8 +526,10 @@
 					<li>openlog</li>
 					<li>syslog</li>
 					<li>closelog</li>
+					<li>define_syslog_variables</li>
 					<li>lcg_value</li>
 					<li>metaphone</li>
+					<li>ob_start</li>
 					<li>ob_flush</li>
 					<li>ob_clean</li>
 					<li>ob_end_flush</li>
@@ -507,6 +550,9 @@
 					<li>arsort</li>
 					<li>sort</li>
 					<li>rsort</li>
+					<li>usort</li>
+					<li>uasort</li>
+					<li>uksort</li>
 					<li>shuffle</li>
 					<li>array_walk</li>
 					<li>count</li>
@@ -560,25 +606,30 @@
 					<li>version_compare</li>
 					<li>ftok</li>
 					<li>str_rot13</li>
+					<li>aggregate</li>
+					<li>aggregate_methods</li>
+					<li>aggregate_methods_by_list</li>
+					<li>aggregate_properties</li>
+					<li>aggregate_properties_by_list</li>
+					<li>aggregate_methods_by_regexp</li>
+					<li>aggregate_properties_by_regexp</li>
+					<li>deaggregate</li>
+					<li>aggregation_info</li>
 					<li>output_add_rewrite_var</li>
 					<li>output_reset_rewrite_vars</li>
 			</ul>
-	<h2 id="date"><a href="#date">#</a> PHP date library: <a href="#">&uarr;</a></h2>
+	<h2 id="sockets">
+		<a href="#sockets">#</a>
+		PHP sockets library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
-					<li>time</li>
-					<li>mktime</li>
-					<li>gmmktime</li>
-					<li>strftime</li>
-					<li>gmstrftime</li>
-					<li>strtotime</li>
-					<li>date</li>
-					<li>gmdate</li>
-					<li>getdate</li>
-					<li>localtime</li>
-					<li>checkdate</li>
-			</ul>
-	<h2 id="sockets"><a href="#sockets">#</a> PHP sockets library: <a href="#">&uarr;</a></h2>
-	<ul>
+					<li>socket_iovec_alloc</li>
+					<li>socket_iovec_free</li>
+					<li>socket_iovec_set</li>
+					<li>socket_iovec_fetch</li>
+					<li>socket_iovec_add</li>
+					<li>socket_iovec_delete</li>
 					<li>socket_select</li>
 					<li>socket_create</li>
 					<li>socket_create_listen</li>
@@ -601,6 +652,8 @@
 					<li>socket_sendto</li>
 					<li>socket_recvmsg</li>
 					<li>socket_sendmsg</li>
+					<li>socket_readv</li>
+					<li>socket_writev</li>
 					<li>socket_get_option</li>
 					<li>socket_set_option</li>
 					<li>socket_shutdown</li>
@@ -609,7 +662,11 @@
 					<li>socket_getopt</li>
 					<li>socket_setopt</li>
 			</ul>
-	<h2 id="shmop"><a href="#shmop">#</a> PHP shmop library: <a href="#">&uarr;</a></h2>
+	<h2 id="shmop">
+		<a href="#shmop">#</a>
+		PHP shmop library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>shmop_open</li>
 					<li>shmop_read</li>
@@ -618,7 +675,11 @@
 					<li>shmop_write</li>
 					<li>shmop_delete</li>
 			</ul>
-	<h2 id="session"><a href="#session">#</a> PHP session library: <a href="#">&uarr;</a></h2>
+	<h2 id="session">
+		<a href="#session">#</a>
+		PHP session library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>session_name</li>
 					<li>session_module_name</li>
@@ -626,6 +687,9 @@
 					<li>session_id</li>
 					<li>session_regenerate_id</li>
 					<li>session_decode</li>
+					<li>session_register</li>
+					<li>session_unregister</li>
+					<li>session_is_registered</li>
 					<li>session_encode</li>
 					<li>session_start</li>
 					<li>session_destroy</li>
@@ -638,7 +702,11 @@
 					<li>session_write_close</li>
 					<li>session_commit</li>
 			</ul>
-	<h2 id="readline"><a href="#readline">#</a> PHP readline library: <a href="#">&uarr;</a></h2>
+	<h2 id="readline">
+		<a href="#readline">#</a>
+		PHP readline library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>readline</li>
 					<li>readline_info</li>
@@ -649,7 +717,11 @@
 					<li>readline_write_history</li>
 					<li>readline_completion_function</li>
 			</ul>
-	<h2 id="posix"><a href="#posix">#</a> PHP posix library: <a href="#">&uarr;</a></h2>
+	<h2 id="posix">
+		<a href="#posix">#</a>
+		PHP posix library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>posix_kill</li>
 					<li>posix_getpid</li>
@@ -685,7 +757,19 @@
 					<li>posix_errno</li>
 					<li>posix_strerror</li>
 			</ul>
-	<h2 id="mysql"><a href="#mysql">#</a> PHP mysql library: <a href="#">&uarr;</a></h2>
+	<h2 id="overload">
+		<a href="#overload">#</a>
+		PHP overload library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>overload</li>
+			</ul>
+	<h2 id="mysql">
+		<a href="#mysql">#</a>
+		PHP mysql library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>mysql_connect</li>
 					<li>mysql_pconnect</li>
@@ -693,6 +777,9 @@
 					<li>mysql_select_db</li>
 					<li>mysql_query</li>
 					<li>mysql_unbuffered_query</li>
+					<li>mysql_db_query</li>
+					<li>mysql_list_dbs</li>
+					<li>mysql_list_tables</li>
 					<li>mysql_list_fields</li>
 					<li>mysql_list_processes</li>
 					<li>mysql_error</li>
@@ -727,12 +814,34 @@
 					<li>mysql_get_proto_info</li>
 					<li>mysql_get_server_info</li>
 					<li>mysql_info</li>
+					<li>mysql</li>
+					<li>mysql_fieldname</li>
+					<li>mysql_fieldtable</li>
+					<li>mysql_fieldlen</li>
+					<li>mysql_fieldtype</li>
+					<li>mysql_fieldflags</li>
+					<li>mysql_selectdb</li>
+					<li>mysql_freeresult</li>
+					<li>mysql_numfields</li>
+					<li>mysql_numrows</li>
+					<li>mysql_listdbs</li>
+					<li>mysql_listtables</li>
+					<li>mysql_listfields</li>
 					<li>mysql_db_name</li>
+					<li>mysql_dbname</li>
 					<li>mysql_tablename</li>
 					<li>mysql_table_name</li>
 			</ul>
-	<h2 id="mcrypt"><a href="#mcrypt">#</a> PHP mcrypt library: <a href="#">&uarr;</a></h2>
+	<h2 id="mcrypt">
+		<a href="#mcrypt">#</a>
+		PHP mcrypt library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
+					<li>mcrypt_ecb</li>
+					<li>mcrypt_cbc</li>
+					<li>mcrypt_cfb</li>
+					<li>mcrypt_ofb</li>
 					<li>mcrypt_get_key_size</li>
 					<li>mcrypt_get_block_size</li>
 					<li>mcrypt_get_cipher_name</li>
@@ -746,6 +855,7 @@
 					<li>mcrypt_generic_init</li>
 					<li>mcrypt_generic</li>
 					<li>mdecrypt_generic</li>
+					<li>mcrypt_generic_end</li>
 					<li>mcrypt_generic_deinit</li>
 					<li>mcrypt_enc_self_test</li>
 					<li>mcrypt_enc_is_block_algorithm_mode</li>
@@ -766,7 +876,11 @@
 					<li>mcrypt_module_get_supported_key_sizes</li>
 					<li>mcrypt_module_close</li>
 			</ul>
-	<h2 id="mbstring"><a href="#mbstring">#</a> PHP mbstring library: <a href="#">&uarr;</a></h2>
+	<h2 id="mbstring">
+		<a href="#mbstring">#</a>
+		PHP mbstring library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>mb_convert_case</li>
 					<li>mb_strtoupper</li>
@@ -799,6 +913,19 @@
 					<li>mb_send_mail</li>
 					<li>mb_get_info</li>
 					<li>mb_check_encoding</li>
+					<li>mbstrlen</li>
+					<li>mbstrpos</li>
+					<li>mbstrrpos</li>
+					<li>mbsubstr</li>
+					<li>mbstrcut</li>
+					<li>i18n_internal_encoding</li>
+					<li>i18n_http_input</li>
+					<li>i18n_http_output</li>
+					<li>i18n_convert</li>
+					<li>i18n_discover_encoding</li>
+					<li>i18n_mime_header_encode</li>
+					<li>i18n_mime_header_decode</li>
+					<li>i18n_ja_jp_hantozen</li>
 					<li>mb_regex_encoding</li>
 					<li>mb_regex_set_options</li>
 					<li>mb_ereg</li>
@@ -829,13 +956,22 @@
 					<li>mbereg_search_getpos</li>
 					<li>mbereg_search_setpos</li>
 			</ul>
-	<h2 id="iconv"><a href="#iconv">#</a> PHP iconv library: <a href="#">&uarr;</a></h2>
+	<h2 id="iconv">
+		<a href="#iconv">#</a>
+		PHP iconv library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>iconv</li>
+					<li>ob_iconv_handler</li>
 					<li>iconv_get_encoding</li>
 					<li>iconv_set_encoding</li>
 			</ul>
-	<h2 id="gd"><a href="#gd">#</a> PHP gd library: <a href="#">&uarr;</a></h2>
+	<h2 id="gd">
+		<a href="#gd">#</a>
+		PHP gd library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>gd_info</li>
 					<li>imagearc</li>
@@ -929,7 +1065,11 @@
 					<li>imagelayereffect</li>
 					<li>imagecolormatch</li>
 			</ul>
-	<h2 id="ftp"><a href="#ftp">#</a> PHP ftp library: <a href="#">&uarr;</a></h2>
+	<h2 id="ftp">
+		<a href="#ftp">#</a>
+		PHP ftp library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>ftp_connect</li>
 					<li>ftp_login</li>
@@ -962,7 +1102,112 @@
 					<li>ftp_nb_fput</li>
 					<li>ftp_quit</li>
 			</ul>
-	<h2 id="curl"><a href="#curl">#</a> PHP curl library: <a href="#">&uarr;</a></h2>
+	<h2 id="domxml">
+		<a href="#domxml">#</a>
+		PHP domxml library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>domxml_version</li>
+					<li>xmldoc</li>
+					<li>domxml_open_mem</li>
+					<li>xmldocfile</li>
+					<li>domxml_open_file</li>
+					<li>html_doc</li>
+					<li>html_doc_file</li>
+					<li>domxml_xmltree</li>
+					<li>xmltree</li>
+					<li>domxml_substitute_entities_default</li>
+					<li>domxml_doc_document_element</li>
+					<li>domxml_doc_add_root</li>
+					<li>domxml_doc_set_root</li>
+					<li>domxml_dump_mem</li>
+					<li>domxml_dump_mem_file</li>
+					<li>domxml_dump_node</li>
+					<li>domxml_html_dump_mem</li>
+					<li>domxml_node_attributes</li>
+					<li>domxml_elem_get_attribute</li>
+					<li>domxml_elem_set_attribute</li>
+					<li>domxml_node_children</li>
+					<li>domxml_node_has_attributes</li>
+					<li>domxml_node_new_child</li>
+					<li>domxml_node</li>
+					<li>domxml_node_unlink_node</li>
+					<li>domxml_node_set_content</li>
+					<li>domxml_node_get_content</li>
+					<li>domxml_node_add_namespace</li>
+					<li>domxml_node_set_namespace</li>
+					<li>domxml_new_xmldoc</li>
+					<li>domxml_new_doc</li>
+					<li>domxml_parser</li>
+					<li>domxml_parser_add_chunk</li>
+					<li>domxml_parser_end</li>
+					<li>domxml_parser_start_element</li>
+					<li>domxml_parser_end_element</li>
+					<li>domxml_parser_comment</li>
+					<li>domxml_parser_characters</li>
+					<li>domxml_parser_entity_reference</li>
+					<li>domxml_parser_processing_instruction</li>
+					<li>domxml_parser_cdata_section</li>
+					<li>domxml_parser_namespace_decl</li>
+					<li>domxml_parser_start_document</li>
+					<li>domxml_parser_end_document</li>
+					<li>domxml_parser_get_document</li>
+					<li>xpath_new_context</li>
+					<li>xpath_eval</li>
+					<li>xpath_eval_expression</li>
+					<li>xpath_register_ns</li>
+					<li>domxml_doc_get_elements_by_tagname</li>
+					<li>domxml_doc_get_element_by_id</li>
+					<li>xptr_new_context</li>
+					<li>xptr_eval</li>
+					<li>domxml_xslt_version</li>
+					<li>domxml_xslt_stylesheet</li>
+					<li>domxml_xslt_stylesheet_doc</li>
+					<li>domxml_xslt_stylesheet_file</li>
+					<li>domxml_xslt_process</li>
+					<li>domxml_xslt_result_dump_mem</li>
+					<li>domxml_xslt_result_dump_file</li>
+					<li>domxml_add_root</li>
+					<li>domxml_doc_get_root</li>
+					<li>domxml_root</li>
+					<li>domxml_attributes</li>
+					<li>domxml_get_attribute</li>
+					<li>domxml_getattr</li>
+					<li>domxml_set_attribute</li>
+					<li>domxml_setattr</li>
+					<li>domxml_children</li>
+					<li>domxml_new_child</li>
+					<li>domxml_unlink_node</li>
+					<li>set_content</li>
+					<li>new_xmldoc</li>
+					<li>domxml_dumpmem</li>
+					<li>domxml_doc_validate</li>
+					<li>domxml_doc_xinclude</li>
+			</ul>
+	<h2 id="dbase">
+		<a href="#dbase">#</a>
+		PHP dbase library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>dbase_open</li>
+					<li>dbase_create</li>
+					<li>dbase_close</li>
+					<li>dbase_numrecords</li>
+					<li>dbase_numfields</li>
+					<li>dbase_add_record</li>
+					<li>dbase_replace_record</li>
+					<li>dbase_get_record</li>
+					<li>dbase_get_record_with_names</li>
+					<li>dbase_delete_record</li>
+					<li>dbase_pack</li>
+			</ul>
+	<h2 id="curl">
+		<a href="#curl">#</a>
+		PHP curl library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>curl_init</li>
 					<li>curl_version</li>
@@ -973,7 +1218,11 @@
 					<li>curl_errno</li>
 					<li>curl_close</li>
 			</ul>
-	<h2 id="ctype"><a href="#ctype">#</a> PHP ctype library: <a href="#">&uarr;</a></h2>
+	<h2 id="ctype">
+		<a href="#ctype">#</a>
+		PHP ctype library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>ctype_alnum</li>
 					<li>ctype_alpha</li>
@@ -987,7 +1236,11 @@
 					<li>ctype_upper</li>
 					<li>ctype_xdigit</li>
 			</ul>
-	<h2 id="zlib"><a href="#zlib">#</a> PHP zlib library: <a href="#">&uarr;</a></h2>
+	<h2 id="zlib">
+		<a href="#zlib">#</a>
+		PHP zlib library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>readgzfile</li>
 					<li>gzrewind</li>
@@ -1012,7 +1265,11 @@
 					<li>ob_gzhandler</li>
 					<li>zlib_get_coding_type</li>
 			</ul>
-	<h2 id="pcre"><a href="#pcre">#</a> PHP pcre library: <a href="#">&uarr;</a></h2>
+	<h2 id="pcre">
+		<a href="#pcre">#</a>
+		PHP pcre library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>preg_match</li>
 					<li>preg_match_all</li>

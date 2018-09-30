@@ -24,17 +24,19 @@
 
 <div><a href="https://eua1024.github.io/php-lib-commands">&larr; to main page</a></div>
 
-<h1>Commands list of php-libraries (variant 1)</h1>
+<h1>Commands list of php-libraries (variant 2)</h1>
 <a href="https://github.com/eua1024/php-lib-commands">https://github.com/eua1024/php-lib-commands</a>
 
-<h2>PHP version: 5.4.45</h2>
+<h2>PHP version: 5.6.37</h2>
 <div id="lib_list">
 	PHP libraries:
 			<a href="#Core">Core</a>
 			<a href="#date">date</a>
+			<a href="#ereg">ereg</a>
 			<a href="#libxml">libxml</a>
 			<a href="#openssl">openssl</a>
 			<a href="#pcre">pcre</a>
+			<a href="#sqlite3">sqlite3</a>
 			<a href="#zlib">zlib</a>
 			<a href="#bcmath">bcmath</a>
 			<a href="#bz2">bz2</a>
@@ -42,35 +44,41 @@
 			<a href="#ctype">ctype</a>
 			<a href="#curl">curl</a>
 			<a href="#dom">dom</a>
-			<a href="#exif">exif</a>
+			<a href="#hash">hash</a>
 			<a href="#fileinfo">fileinfo</a>
 			<a href="#filter">filter</a>
 			<a href="#ftp">ftp</a>
 			<a href="#gd">gd</a>
 			<a href="#gettext">gettext</a>
 			<a href="#gmp">gmp</a>
-			<a href="#hash">hash</a>
+			<a href="#SPL">SPL</a>
 			<a href="#iconv">iconv</a>
-			<a href="#imap">imap</a>
+			<a href="#session">session</a>
 			<a href="#interbase">interbase</a>
 			<a href="#intl">intl</a>
 			<a href="#json">json</a>
 			<a href="#mbstring">mbstring</a>
 			<a href="#mcrypt">mcrypt</a>
 			<a href="#mssql">mssql</a>
-			<a href="#mysql">mysql</a>
+			<a href="#standard">standard</a>
+			<a href="#mysqlnd">mysqlnd</a>
 			<a href="#mysqli">mysqli</a>
 			<a href="#pcntl">pcntl</a>
-			<a href="#SPL">SPL</a>
+			<a href="#mysql">mysql</a>
 			<a href="#PDO">PDO</a>
+			<a href="#PDO_Firebird">PDO_Firebird</a>
+			<a href="#pdo_mysql">pdo_mysql</a>
+			<a href="#pdo_sqlite">pdo_sqlite</a>
+			<a href="#Phar">Phar</a>
 			<a href="#posix">posix</a>
 			<a href="#readline">readline</a>
-			<a href="#session">session</a>
+			<a href="#Reflection">Reflection</a>
+			<a href="#imap">imap</a>
 			<a href="#shmop">shmop</a>
 			<a href="#SimpleXML">SimpleXML</a>
 			<a href="#soap">soap</a>
 			<a href="#sockets">sockets</a>
-			<a href="#standard">standard</a>
+			<a href="#exif">exif</a>
 			<a href="#sysvmsg">sysvmsg</a>
 			<a href="#sysvsem">sysvsem</a>
 			<a href="#sysvshm">sysvshm</a>
@@ -78,13 +86,23 @@
 			<a href="#tokenizer">tokenizer</a>
 			<a href="#wddx">wddx</a>
 			<a href="#xml">xml</a>
+			<a href="#xmlreader">xmlreader</a>
 			<a href="#xmlrpc">xmlrpc</a>
 			<a href="#xmlwriter">xmlwriter</a>
+			<a href="#xsl">xsl</a>
 			<a href="#zip">zip</a>
+			<a href="#litespeed">litespeed</a>
+			<a href="#imagick">imagick</a>
+			<a href="#timezonedb">timezonedb</a>
+			<a href="#mhash">mhash</a>
 		
 </div>
 
-	<h2 id="Core"><a href="#Core">#</a> PHP Core library: <a href="#">&uarr;</a></h2>
+	<h2 id="Core">
+		<a href="#Core">#</a>
+		PHP Core library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>zend_version</li>
 					<li>func_num_args</li>
@@ -107,6 +125,7 @@
 					<li>class_exists</li>
 					<li>interface_exists</li>
 					<li>trait_exists</li>
+					<li>function_exists</li>
 					<li>class_alias</li>
 					<li>get_included_files</li>
 					<li>get_required_files</li>
@@ -139,7 +158,11 @@
 					<li>gc_enable</li>
 					<li>gc_disable</li>
 			</ul>
-	<h2 id="date"><a href="#date">#</a> PHP date library: <a href="#">&uarr;</a></h2>
+	<h2 id="date">
+		<a href="#date">#</a>
+		PHP date library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>strtotime</li>
 					<li>date</li>
@@ -154,7 +177,9 @@
 					<li>localtime</li>
 					<li>getdate</li>
 					<li>date_create</li>
+					<li>date_create_immutable</li>
 					<li>date_create_from_format</li>
+					<li>date_create_immutable_from_format</li>
 					<li>date_parse</li>
 					<li>date_parse_from_format</li>
 					<li>date_get_last_errors</li>
@@ -188,7 +213,25 @@
 					<li>date_sunset</li>
 					<li>date_sun_info</li>
 			</ul>
-	<h2 id="libxml"><a href="#libxml">#</a> PHP libxml library: <a href="#">&uarr;</a></h2>
+	<h2 id="ereg">
+		<a href="#ereg">#</a>
+		PHP ereg library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>ereg</li>
+					<li>ereg_replace</li>
+					<li>eregi</li>
+					<li>eregi_replace</li>
+					<li>split</li>
+					<li>spliti</li>
+					<li>sql_regcase</li>
+			</ul>
+	<h2 id="libxml">
+		<a href="#libxml">#</a>
+		PHP libxml library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>libxml_set_streams_context</li>
 					<li>libxml_use_internal_errors</li>
@@ -196,9 +239,19 @@
 					<li>libxml_clear_errors</li>
 					<li>libxml_get_errors</li>
 					<li>libxml_disable_entity_loader</li>
+					<li>libxml_set_external_entity_loader</li>
 			</ul>
-	<h2 id="openssl"><a href="#openssl">#</a> PHP openssl library: <a href="#">&uarr;</a></h2>
+	<h2 id="openssl">
+		<a href="#openssl">#</a>
+		PHP openssl library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
+					<li>openssl_get_cert_locations</li>
+					<li>openssl_spki_new</li>
+					<li>openssl_spki_verify</li>
+					<li>openssl_spki_export</li>
+					<li>openssl_spki_export_challenge</li>
 					<li>openssl_pkey_free</li>
 					<li>openssl_pkey_new</li>
 					<li>openssl_pkey_export</li>
@@ -215,6 +268,7 @@
 					<li>openssl_x509_checkpurpose</li>
 					<li>openssl_x509_check_private_key</li>
 					<li>openssl_x509_export</li>
+					<li>openssl_x509_fingerprint</li>
 					<li>openssl_x509_export_to_file</li>
 					<li>openssl_pkcs12_export</li>
 					<li>openssl_pkcs12_export_to_file</li>
@@ -233,6 +287,7 @@
 					<li>openssl_verify</li>
 					<li>openssl_seal</li>
 					<li>openssl_open</li>
+					<li>openssl_pbkdf2</li>
 					<li>openssl_pkcs7_verify</li>
 					<li>openssl_pkcs7_decrypt</li>
 					<li>openssl_pkcs7_sign</li>
@@ -247,7 +302,11 @@
 					<li>openssl_random_pseudo_bytes</li>
 					<li>openssl_error_string</li>
 			</ul>
-	<h2 id="pcre"><a href="#pcre">#</a> PHP pcre library: <a href="#">&uarr;</a></h2>
+	<h2 id="pcre">
+		<a href="#pcre">#</a>
+		PHP pcre library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>preg_match</li>
 					<li>preg_match_all</li>
@@ -259,7 +318,18 @@
 					<li>preg_grep</li>
 					<li>preg_last_error</li>
 			</ul>
-	<h2 id="zlib"><a href="#zlib">#</a> PHP zlib library: <a href="#">&uarr;</a></h2>
+	<h2 id="sqlite3">
+		<a href="#sqlite3">#</a>
+		PHP sqlite3 library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="zlib">
+		<a href="#zlib">#</a>
+		PHP zlib library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>readgzfile</li>
 					<li>gzrewind</li>
@@ -287,7 +357,11 @@
 					<li>zlib_get_coding_type</li>
 					<li>ob_gzhandler</li>
 			</ul>
-	<h2 id="bcmath"><a href="#bcmath">#</a> PHP bcmath library: <a href="#">&uarr;</a></h2>
+	<h2 id="bcmath">
+		<a href="#bcmath">#</a>
+		PHP bcmath library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>bcadd</li>
 					<li>bcsub</li>
@@ -300,7 +374,11 @@
 					<li>bccomp</li>
 					<li>bcpowmod</li>
 			</ul>
-	<h2 id="bz2"><a href="#bz2">#</a> PHP bz2 library: <a href="#">&uarr;</a></h2>
+	<h2 id="bz2">
+		<a href="#bz2">#</a>
+		PHP bz2 library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>bzopen</li>
 					<li>bzread</li>
@@ -313,7 +391,11 @@
 					<li>bzcompress</li>
 					<li>bzdecompress</li>
 			</ul>
-	<h2 id="calendar"><a href="#calendar">#</a> PHP calendar library: <a href="#">&uarr;</a></h2>
+	<h2 id="calendar">
+		<a href="#calendar">#</a>
+		PHP calendar library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>jdtogregorian</li>
 					<li>gregoriantojd</li>
@@ -334,7 +416,11 @@
 					<li>cal_days_in_month</li>
 					<li>cal_info</li>
 			</ul>
-	<h2 id="ctype"><a href="#ctype">#</a> PHP ctype library: <a href="#">&uarr;</a></h2>
+	<h2 id="ctype">
+		<a href="#ctype">#</a>
+		PHP ctype library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>ctype_alnum</li>
 					<li>ctype_alpha</li>
@@ -348,7 +434,11 @@
 					<li>ctype_upper</li>
 					<li>ctype_xdigit</li>
 			</ul>
-	<h2 id="curl"><a href="#curl">#</a> PHP curl library: <a href="#">&uarr;</a></h2>
+	<h2 id="curl">
+		<a href="#curl">#</a>
+		PHP curl library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>curl_init</li>
 					<li>curl_copy_handle</li>
@@ -360,6 +450,12 @@
 					<li>curl_error</li>
 					<li>curl_errno</li>
 					<li>curl_close</li>
+					<li>curl_strerror</li>
+					<li>curl_multi_strerror</li>
+					<li>curl_reset</li>
+					<li>curl_escape</li>
+					<li>curl_unescape</li>
+					<li>curl_pause</li>
 					<li>curl_multi_init</li>
 					<li>curl_multi_add_handle</li>
 					<li>curl_multi_remove_handle</li>
@@ -368,20 +464,50 @@
 					<li>curl_multi_getcontent</li>
 					<li>curl_multi_info_read</li>
 					<li>curl_multi_close</li>
+					<li>curl_multi_setopt</li>
+					<li>curl_share_init</li>
+					<li>curl_share_close</li>
+					<li>curl_share_setopt</li>
+					<li>curl_file_create</li>
 			</ul>
-	<h2 id="dom"><a href="#dom">#</a> PHP dom library: <a href="#">&uarr;</a></h2>
+	<h2 id="dom">
+		<a href="#dom">#</a>
+		PHP dom library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>dom_import_simplexml</li>
 			</ul>
-	<h2 id="exif"><a href="#exif">#</a> PHP exif library: <a href="#">&uarr;</a></h2>
+	<h2 id="hash">
+		<a href="#hash">#</a>
+		PHP hash library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
-					<li>exif_read_data</li>
-					<li>read_exif_data</li>
-					<li>exif_tagname</li>
-					<li>exif_thumbnail</li>
-					<li>exif_imagetype</li>
+					<li>hash</li>
+					<li>hash_file</li>
+					<li>hash_hmac</li>
+					<li>hash_hmac_file</li>
+					<li>hash_init</li>
+					<li>hash_update</li>
+					<li>hash_update_stream</li>
+					<li>hash_update_file</li>
+					<li>hash_final</li>
+					<li>hash_copy</li>
+					<li>hash_algos</li>
+					<li>hash_pbkdf2</li>
+					<li>hash_equals</li>
+					<li>mhash_keygen_s2k</li>
+					<li>mhash_get_block_size</li>
+					<li>mhash_get_hash_name</li>
+					<li>mhash_count</li>
+					<li>mhash</li>
 			</ul>
-	<h2 id="fileinfo"><a href="#fileinfo">#</a> PHP fileinfo library: <a href="#">&uarr;</a></h2>
+	<h2 id="fileinfo">
+		<a href="#fileinfo">#</a>
+		PHP fileinfo library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>finfo_open</li>
 					<li>finfo_close</li>
@@ -390,7 +516,11 @@
 					<li>finfo_buffer</li>
 					<li>mime_content_type</li>
 			</ul>
-	<h2 id="filter"><a href="#filter">#</a> PHP filter library: <a href="#">&uarr;</a></h2>
+	<h2 id="filter">
+		<a href="#filter">#</a>
+		PHP filter library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>filter_input</li>
 					<li>filter_var</li>
@@ -400,7 +530,11 @@
 					<li>filter_has_var</li>
 					<li>filter_id</li>
 			</ul>
-	<h2 id="ftp"><a href="#ftp">#</a> PHP ftp library: <a href="#">&uarr;</a></h2>
+	<h2 id="ftp">
+		<a href="#ftp">#</a>
+		PHP ftp library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>ftp_connect</li>
 					<li>ftp_ssl_connect</li>
@@ -437,7 +571,11 @@
 					<li>ftp_nb_fput</li>
 					<li>ftp_quit</li>
 			</ul>
-	<h2 id="gd"><a href="#gd">#</a> PHP gd library: <a href="#">&uarr;</a></h2>
+	<h2 id="gd">
+		<a href="#gd">#</a>
+		PHP gd library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>gd_info</li>
 					<li>imagearc</li>
@@ -465,6 +603,7 @@
 					<li>imagecreatetruecolor</li>
 					<li>imageistruecolor</li>
 					<li>imagetruecolortopalette</li>
+					<li>imagepalettetotruecolor</li>
 					<li>imagesetthickness</li>
 					<li>imagefilledarc</li>
 					<li>imagefilledellipse</li>
@@ -476,11 +615,20 @@
 					<li>imagecolorexactalpha</li>
 					<li>imagecopyresampled</li>
 					<li>imagerotate</li>
+					<li>imageflip</li>
 					<li>imageantialias</li>
+					<li>imagecrop</li>
+					<li>imagecropauto</li>
+					<li>imagescale</li>
+					<li>imageaffine</li>
+					<li>imageaffinematrixconcat</li>
+					<li>imageaffinematrixget</li>
+					<li>imagesetinterpolation</li>
 					<li>imagesettile</li>
 					<li>imagesetbrush</li>
 					<li>imagesetstyle</li>
 					<li>imagecreatefrompng</li>
+					<li>imagecreatefromwebp</li>
 					<li>imagecreatefromgif</li>
 					<li>imagecreatefromjpeg</li>
 					<li>imagecreatefromwbmp</li>
@@ -489,6 +637,7 @@
 					<li>imagecreatefromgd2</li>
 					<li>imagecreatefromgd2part</li>
 					<li>imagepng</li>
+					<li>imagewebp</li>
 					<li>imagegif</li>
 					<li>imagejpeg</li>
 					<li>imagewbmp</li>
@@ -534,7 +683,11 @@
 					<li>imagefilter</li>
 					<li>imageconvolution</li>
 			</ul>
-	<h2 id="gettext"><a href="#gettext">#</a> PHP gettext library: <a href="#">&uarr;</a></h2>
+	<h2 id="gettext">
+		<a href="#gettext">#</a>
+		PHP gettext library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>textdomain</li>
 					<li>gettext</li>
@@ -547,9 +700,15 @@
 					<li>dcngettext</li>
 					<li>bind_textdomain_codeset</li>
 			</ul>
-	<h2 id="gmp"><a href="#gmp">#</a> PHP gmp library: <a href="#">&uarr;</a></h2>
+	<h2 id="gmp">
+		<a href="#gmp">#</a>
+		PHP gmp library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>gmp_init</li>
+					<li>gmp_import</li>
+					<li>gmp_export</li>
 					<li>gmp_intval</li>
 					<li>gmp_strval</li>
 					<li>gmp_add</li>
@@ -566,6 +725,8 @@
 					<li>gmp_fact</li>
 					<li>gmp_sqrt</li>
 					<li>gmp_sqrtrem</li>
+					<li>gmp_root</li>
+					<li>gmp_rootrem</li>
 					<li>gmp_pow</li>
 					<li>gmp_powm</li>
 					<li>gmp_perfect_square</li>
@@ -578,39 +739,47 @@
 					<li>gmp_cmp</li>
 					<li>gmp_sign</li>
 					<li>gmp_random</li>
+					<li>gmp_random_bits</li>
+					<li>gmp_random_range</li>
 					<li>gmp_and</li>
 					<li>gmp_or</li>
 					<li>gmp_com</li>
 					<li>gmp_xor</li>
 					<li>gmp_setbit</li>
 					<li>gmp_clrbit</li>
+					<li>gmp_testbit</li>
 					<li>gmp_scan0</li>
 					<li>gmp_scan1</li>
-					<li>gmp_testbit</li>
 					<li>gmp_popcount</li>
 					<li>gmp_hamdist</li>
 					<li>gmp_nextprime</li>
 			</ul>
-	<h2 id="hash"><a href="#hash">#</a> PHP hash library: <a href="#">&uarr;</a></h2>
+	<h2 id="SPL">
+		<a href="#SPL">#</a>
+		PHP SPL library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
-					<li>hash</li>
-					<li>hash_file</li>
-					<li>hash_hmac</li>
-					<li>hash_hmac_file</li>
-					<li>hash_init</li>
-					<li>hash_update</li>
-					<li>hash_update_stream</li>
-					<li>hash_update_file</li>
-					<li>hash_final</li>
-					<li>hash_copy</li>
-					<li>hash_algos</li>
-					<li>mhash_keygen_s2k</li>
-					<li>mhash_get_block_size</li>
-					<li>mhash_get_hash_name</li>
-					<li>mhash_count</li>
-					<li>mhash</li>
+					<li>spl_classes</li>
+					<li>spl_autoload</li>
+					<li>spl_autoload_extensions</li>
+					<li>spl_autoload_register</li>
+					<li>spl_autoload_unregister</li>
+					<li>spl_autoload_functions</li>
+					<li>spl_autoload_call</li>
+					<li>class_parents</li>
+					<li>class_implements</li>
+					<li>class_uses</li>
+					<li>spl_object_hash</li>
+					<li>iterator_to_array</li>
+					<li>iterator_count</li>
+					<li>iterator_apply</li>
 			</ul>
-	<h2 id="iconv"><a href="#iconv">#</a> PHP iconv library: <a href="#">&uarr;</a></h2>
+	<h2 id="iconv">
+		<a href="#iconv">#</a>
+		PHP iconv library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>iconv</li>
 					<li>iconv_get_encoding</li>
@@ -623,83 +792,39 @@
 					<li>iconv_mime_decode</li>
 					<li>iconv_mime_decode_headers</li>
 			</ul>
-	<h2 id="imap"><a href="#imap">#</a> PHP imap library: <a href="#">&uarr;</a></h2>
+	<h2 id="session">
+		<a href="#session">#</a>
+		PHP session library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
-					<li>imap_open</li>
-					<li>imap_reopen</li>
-					<li>imap_close</li>
-					<li>imap_num_msg</li>
-					<li>imap_num_recent</li>
-					<li>imap_headers</li>
-					<li>imap_headerinfo</li>
-					<li>imap_rfc822_parse_headers</li>
-					<li>imap_rfc822_write_address</li>
-					<li>imap_rfc822_parse_adrlist</li>
-					<li>imap_body</li>
-					<li>imap_bodystruct</li>
-					<li>imap_fetchbody</li>
-					<li>imap_fetchmime</li>
-					<li>imap_savebody</li>
-					<li>imap_fetchheader</li>
-					<li>imap_fetchstructure</li>
-					<li>imap_gc</li>
-					<li>imap_expunge</li>
-					<li>imap_delete</li>
-					<li>imap_undelete</li>
-					<li>imap_check</li>
-					<li>imap_listscan</li>
-					<li>imap_mail_copy</li>
-					<li>imap_mail_move</li>
-					<li>imap_mail_compose</li>
-					<li>imap_createmailbox</li>
-					<li>imap_renamemailbox</li>
-					<li>imap_deletemailbox</li>
-					<li>imap_subscribe</li>
-					<li>imap_unsubscribe</li>
-					<li>imap_append</li>
-					<li>imap_ping</li>
-					<li>imap_base64</li>
-					<li>imap_qprint</li>
-					<li>imap_8bit</li>
-					<li>imap_binary</li>
-					<li>imap_utf8</li>
-					<li>imap_status</li>
-					<li>imap_mailboxmsginfo</li>
-					<li>imap_setflag_full</li>
-					<li>imap_clearflag_full</li>
-					<li>imap_sort</li>
-					<li>imap_uid</li>
-					<li>imap_msgno</li>
-					<li>imap_list</li>
-					<li>imap_lsub</li>
-					<li>imap_fetch_overview</li>
-					<li>imap_alerts</li>
-					<li>imap_errors</li>
-					<li>imap_last_error</li>
-					<li>imap_search</li>
-					<li>imap_utf7_decode</li>
-					<li>imap_utf7_encode</li>
-					<li>imap_mime_header_decode</li>
-					<li>imap_thread</li>
-					<li>imap_timeout</li>
-					<li>imap_get_quota</li>
-					<li>imap_get_quotaroot</li>
-					<li>imap_set_quota</li>
-					<li>imap_setacl</li>
-					<li>imap_getacl</li>
-					<li>imap_mail</li>
-					<li>imap_header</li>
-					<li>imap_listmailbox</li>
-					<li>imap_getmailboxes</li>
-					<li>imap_scanmailbox</li>
-					<li>imap_listsubscribed</li>
-					<li>imap_getsubscribed</li>
-					<li>imap_fetchtext</li>
-					<li>imap_scan</li>
-					<li>imap_create</li>
-					<li>imap_rename</li>
+					<li>session_name</li>
+					<li>session_module_name</li>
+					<li>session_save_path</li>
+					<li>session_id</li>
+					<li>session_regenerate_id</li>
+					<li>session_decode</li>
+					<li>session_encode</li>
+					<li>session_start</li>
+					<li>session_destroy</li>
+					<li>session_unset</li>
+					<li>session_set_save_handler</li>
+					<li>session_cache_limiter</li>
+					<li>session_cache_expire</li>
+					<li>session_set_cookie_params</li>
+					<li>session_get_cookie_params</li>
+					<li>session_write_close</li>
+					<li>session_abort</li>
+					<li>session_reset</li>
+					<li>session_status</li>
+					<li>session_register_shutdown</li>
+					<li>session_commit</li>
 			</ul>
-	<h2 id="interbase"><a href="#interbase">#</a> PHP interbase library: <a href="#">&uarr;</a></h2>
+	<h2 id="interbase">
+		<a href="#interbase">#</a>
+		PHP interbase library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>ibase_connect</li>
 					<li>ibase_pconnect</li>
@@ -798,7 +923,11 @@
 					<li>fbird_set_event_handler</li>
 					<li>fbird_free_event_handler</li>
 			</ul>
-	<h2 id="intl"><a href="#intl">#</a> PHP intl library: <a href="#">&uarr;</a></h2>
+	<h2 id="intl">
+		<a href="#intl">#</a>
+		PHP intl library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>collator_create</li>
 					<li>collator_compare</li>
@@ -863,15 +992,19 @@
 					<li>datefmt_get_datetype</li>
 					<li>datefmt_get_timetype</li>
 					<li>datefmt_get_calendar</li>
+					<li>datefmt_get_calendar_object</li>
 					<li>datefmt_set_calendar</li>
 					<li>datefmt_get_locale</li>
 					<li>datefmt_get_timezone_id</li>
 					<li>datefmt_set_timezone_id</li>
+					<li>datefmt_get_timezone</li>
+					<li>datefmt_set_timezone</li>
 					<li>datefmt_get_pattern</li>
 					<li>datefmt_set_pattern</li>
 					<li>datefmt_is_lenient</li>
 					<li>datefmt_set_lenient</li>
 					<li>datefmt_format</li>
+					<li>datefmt_format_object</li>
 					<li>datefmt_parse</li>
 					<li>datefmt_localtime</li>
 					<li>datefmt_get_error_code</li>
@@ -900,18 +1033,98 @@
 					<li>transliterator_transliterate</li>
 					<li>transliterator_get_error_code</li>
 					<li>transliterator_get_error_message</li>
+					<li>intltz_create_time_zone</li>
+					<li>intltz_from_date_time_zone</li>
+					<li>intltz_create_default</li>
+					<li>intltz_get_id</li>
+					<li>intltz_get_gmt</li>
+					<li>intltz_get_unknown</li>
+					<li>intltz_create_enumeration</li>
+					<li>intltz_count_equivalent_ids</li>
+					<li>intltz_create_time_zone_id_enumeration</li>
+					<li>intltz_get_canonical_id</li>
+					<li>intltz_get_region</li>
+					<li>intltz_get_tz_data_version</li>
+					<li>intltz_get_equivalent_id</li>
+					<li>intltz_use_daylight_time</li>
+					<li>intltz_get_offset</li>
+					<li>intltz_get_raw_offset</li>
+					<li>intltz_has_same_rules</li>
+					<li>intltz_get_display_name</li>
+					<li>intltz_get_dst_savings</li>
+					<li>intltz_to_date_time_zone</li>
+					<li>intltz_get_error_code</li>
+					<li>intltz_get_error_message</li>
+					<li>intlcal_create_instance</li>
+					<li>intlcal_get_keyword_values_for_locale</li>
+					<li>intlcal_get_now</li>
+					<li>intlcal_get_available_locales</li>
+					<li>intlcal_get</li>
+					<li>intlcal_get_time</li>
+					<li>intlcal_set_time</li>
+					<li>intlcal_add</li>
+					<li>intlcal_set_time_zone</li>
+					<li>intlcal_after</li>
+					<li>intlcal_before</li>
+					<li>intlcal_set</li>
+					<li>intlcal_roll</li>
+					<li>intlcal_clear</li>
+					<li>intlcal_field_difference</li>
+					<li>intlcal_get_actual_maximum</li>
+					<li>intlcal_get_actual_minimum</li>
+					<li>intlcal_get_day_of_week_type</li>
+					<li>intlcal_get_first_day_of_week</li>
+					<li>intlcal_get_greatest_minimum</li>
+					<li>intlcal_get_least_maximum</li>
+					<li>intlcal_get_locale</li>
+					<li>intlcal_get_maximum</li>
+					<li>intlcal_get_minimal_days_in_first_week</li>
+					<li>intlcal_get_minimum</li>
+					<li>intlcal_get_time_zone</li>
+					<li>intlcal_get_type</li>
+					<li>intlcal_get_weekend_transition</li>
+					<li>intlcal_in_daylight_time</li>
+					<li>intlcal_is_equivalent_to</li>
+					<li>intlcal_is_lenient</li>
+					<li>intlcal_is_set</li>
+					<li>intlcal_is_weekend</li>
+					<li>intlcal_set_first_day_of_week</li>
+					<li>intlcal_set_lenient</li>
+					<li>intlcal_set_minimal_days_in_first_week</li>
+					<li>intlcal_equals</li>
+					<li>intlcal_from_date_time</li>
+					<li>intlcal_to_date_time</li>
+					<li>intlcal_get_repeated_wall_time_option</li>
+					<li>intlcal_get_skipped_wall_time_option</li>
+					<li>intlcal_set_repeated_wall_time_option</li>
+					<li>intlcal_set_skipped_wall_time_option</li>
+					<li>intlcal_get_error_code</li>
+					<li>intlcal_get_error_message</li>
+					<li>intlgregcal_create_instance</li>
+					<li>intlgregcal_set_gregorian_change</li>
+					<li>intlgregcal_get_gregorian_change</li>
+					<li>intlgregcal_is_leap_year</li>
 					<li>intl_get_error_code</li>
 					<li>intl_get_error_message</li>
 					<li>intl_is_failure</li>
 					<li>intl_error_name</li>
 			</ul>
-	<h2 id="json"><a href="#json">#</a> PHP json library: <a href="#">&uarr;</a></h2>
+	<h2 id="json">
+		<a href="#json">#</a>
+		PHP json library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>json_encode</li>
 					<li>json_decode</li>
 					<li>json_last_error</li>
+					<li>json_last_error_msg</li>
 			</ul>
-	<h2 id="mbstring"><a href="#mbstring">#</a> PHP mbstring library: <a href="#">&uarr;</a></h2>
+	<h2 id="mbstring">
+		<a href="#mbstring">#</a>
+		PHP mbstring library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>mb_convert_case</li>
 					<li>mb_strtoupper</li>
@@ -983,8 +1196,16 @@
 					<li>mbereg_search_getpos</li>
 					<li>mbereg_search_setpos</li>
 			</ul>
-	<h2 id="mcrypt"><a href="#mcrypt">#</a> PHP mcrypt library: <a href="#">&uarr;</a></h2>
+	<h2 id="mcrypt">
+		<a href="#mcrypt">#</a>
+		PHP mcrypt library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
+					<li>mcrypt_ecb</li>
+					<li>mcrypt_cbc</li>
+					<li>mcrypt_cfb</li>
+					<li>mcrypt_ofb</li>
 					<li>mcrypt_get_key_size</li>
 					<li>mcrypt_get_block_size</li>
 					<li>mcrypt_get_cipher_name</li>
@@ -998,6 +1219,7 @@
 					<li>mcrypt_generic_init</li>
 					<li>mcrypt_generic</li>
 					<li>mdecrypt_generic</li>
+					<li>mcrypt_generic_end</li>
 					<li>mcrypt_generic_deinit</li>
 					<li>mcrypt_enc_self_test</li>
 					<li>mcrypt_enc_is_block_algorithm_mode</li>
@@ -1018,7 +1240,11 @@
 					<li>mcrypt_module_get_supported_key_sizes</li>
 					<li>mcrypt_module_close</li>
 			</ul>
-	<h2 id="mssql"><a href="#mssql">#</a> PHP mssql library: <a href="#">&uarr;</a></h2>
+	<h2 id="mssql">
+		<a href="#mssql">#</a>
+		PHP mssql library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>mssql_connect</li>
 					<li>mssql_pconnect</li>
@@ -1051,326 +1277,11 @@
 					<li>mssql_free_statement</li>
 					<li>mssql_guid_string</li>
 			</ul>
-	<h2 id="mysql"><a href="#mysql">#</a> PHP mysql library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>mysql_connect</li>
-					<li>mysql_pconnect</li>
-					<li>mysql_close</li>
-					<li>mysql_select_db</li>
-					<li>mysql_query</li>
-					<li>mysql_unbuffered_query</li>
-					<li>mysql_list_fields</li>
-					<li>mysql_list_processes</li>
-					<li>mysql_error</li>
-					<li>mysql_errno</li>
-					<li>mysql_affected_rows</li>
-					<li>mysql_insert_id</li>
-					<li>mysql_result</li>
-					<li>mysql_num_rows</li>
-					<li>mysql_num_fields</li>
-					<li>mysql_fetch_row</li>
-					<li>mysql_fetch_array</li>
-					<li>mysql_fetch_assoc</li>
-					<li>mysql_fetch_object</li>
-					<li>mysql_data_seek</li>
-					<li>mysql_fetch_lengths</li>
-					<li>mysql_fetch_field</li>
-					<li>mysql_field_seek</li>
-					<li>mysql_free_result</li>
-					<li>mysql_field_name</li>
-					<li>mysql_field_table</li>
-					<li>mysql_field_len</li>
-					<li>mysql_field_type</li>
-					<li>mysql_field_flags</li>
-					<li>mysql_escape_string</li>
-					<li>mysql_real_escape_string</li>
-					<li>mysql_stat</li>
-					<li>mysql_thread_id</li>
-					<li>mysql_client_encoding</li>
-					<li>mysql_ping</li>
-					<li>mysql_get_client_info</li>
-					<li>mysql_get_host_info</li>
-					<li>mysql_get_proto_info</li>
-					<li>mysql_get_server_info</li>
-					<li>mysql_info</li>
-					<li>mysql_set_charset</li>
-					<li>mysql_db_name</li>
-					<li>mysql_tablename</li>
-					<li>mysql_table_name</li>
-			</ul>
-	<h2 id="mysqli"><a href="#mysqli">#</a> PHP mysqli library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>mysqli_affected_rows</li>
-					<li>mysqli_autocommit</li>
-					<li>mysqli_change_user</li>
-					<li>mysqli_character_set_name</li>
-					<li>mysqli_close</li>
-					<li>mysqli_commit</li>
-					<li>mysqli_connect</li>
-					<li>mysqli_connect_errno</li>
-					<li>mysqli_connect_error</li>
-					<li>mysqli_data_seek</li>
-					<li>mysqli_dump_debug_info</li>
-					<li>mysqli_debug</li>
-					<li>mysqli_errno</li>
-					<li>mysqli_error</li>
-					<li>mysqli_error_list</li>
-					<li>mysqli_stmt_execute</li>
-					<li>mysqli_execute</li>
-					<li>mysqli_fetch_field</li>
-					<li>mysqli_fetch_fields</li>
-					<li>mysqli_fetch_field_direct</li>
-					<li>mysqli_fetch_lengths</li>
-					<li>mysqli_fetch_all</li>
-					<li>mysqli_fetch_array</li>
-					<li>mysqli_fetch_assoc</li>
-					<li>mysqli_fetch_object</li>
-					<li>mysqli_fetch_row</li>
-					<li>mysqli_field_count</li>
-					<li>mysqli_field_seek</li>
-					<li>mysqli_field_tell</li>
-					<li>mysqli_free_result</li>
-					<li>mysqli_get_connection_stats</li>
-					<li>mysqli_get_client_stats</li>
-					<li>mysqli_get_charset</li>
-					<li>mysqli_get_client_info</li>
-					<li>mysqli_get_client_version</li>
-					<li>mysqli_get_host_info</li>
-					<li>mysqli_get_proto_info</li>
-					<li>mysqli_get_server_info</li>
-					<li>mysqli_get_server_version</li>
-					<li>mysqli_get_warnings</li>
-					<li>mysqli_init</li>
-					<li>mysqli_info</li>
-					<li>mysqli_insert_id</li>
-					<li>mysqli_kill</li>
-					<li>mysqli_more_results</li>
-					<li>mysqli_multi_query</li>
-					<li>mysqli_next_result</li>
-					<li>mysqli_num_fields</li>
-					<li>mysqli_num_rows</li>
-					<li>mysqli_options</li>
-					<li>mysqli_ping</li>
-					<li>mysqli_poll</li>
-					<li>mysqli_prepare</li>
-					<li>mysqli_report</li>
-					<li>mysqli_query</li>
-					<li>mysqli_real_connect</li>
-					<li>mysqli_real_escape_string</li>
-					<li>mysqli_real_query</li>
-					<li>mysqli_reap_async_query</li>
-					<li>mysqli_rollback</li>
-					<li>mysqli_select_db</li>
-					<li>mysqli_set_charset</li>
-					<li>mysqli_stmt_affected_rows</li>
-					<li>mysqli_stmt_attr_get</li>
-					<li>mysqli_stmt_attr_set</li>
-					<li>mysqli_stmt_bind_param</li>
-					<li>mysqli_stmt_bind_result</li>
-					<li>mysqli_stmt_close</li>
-					<li>mysqli_stmt_data_seek</li>
-					<li>mysqli_stmt_errno</li>
-					<li>mysqli_stmt_error</li>
-					<li>mysqli_stmt_error_list</li>
-					<li>mysqli_stmt_fetch</li>
-					<li>mysqli_stmt_field_count</li>
-					<li>mysqli_stmt_free_result</li>
-					<li>mysqli_stmt_get_result</li>
-					<li>mysqli_stmt_get_warnings</li>
-					<li>mysqli_stmt_init</li>
-					<li>mysqli_stmt_insert_id</li>
-					<li>mysqli_stmt_more_results</li>
-					<li>mysqli_stmt_next_result</li>
-					<li>mysqli_stmt_num_rows</li>
-					<li>mysqli_stmt_param_count</li>
-					<li>mysqli_stmt_prepare</li>
-					<li>mysqli_stmt_reset</li>
-					<li>mysqli_stmt_result_metadata</li>
-					<li>mysqli_stmt_send_long_data</li>
-					<li>mysqli_stmt_store_result</li>
-					<li>mysqli_stmt_sqlstate</li>
-					<li>mysqli_sqlstate</li>
-					<li>mysqli_ssl_set</li>
-					<li>mysqli_stat</li>
-					<li>mysqli_store_result</li>
-					<li>mysqli_thread_id</li>
-					<li>mysqli_thread_safe</li>
-					<li>mysqli_use_result</li>
-					<li>mysqli_warning_count</li>
-					<li>mysqli_refresh</li>
-					<li>mysqli_escape_string</li>
-					<li>mysqli_set_opt</li>
-			</ul>
-	<h2 id="pcntl"><a href="#pcntl">#</a> PHP pcntl library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>pcntl_fork</li>
-					<li>pcntl_waitpid</li>
-					<li>pcntl_wait</li>
-					<li>pcntl_signal</li>
-					<li>pcntl_signal_dispatch</li>
-					<li>pcntl_wifexited</li>
-					<li>pcntl_wifstopped</li>
-					<li>pcntl_wifsignaled</li>
-					<li>pcntl_wexitstatus</li>
-					<li>pcntl_wtermsig</li>
-					<li>pcntl_wstopsig</li>
-					<li>pcntl_exec</li>
-					<li>pcntl_alarm</li>
-					<li>pcntl_get_last_error</li>
-					<li>pcntl_errno</li>
-					<li>pcntl_strerror</li>
-					<li>pcntl_getpriority</li>
-					<li>pcntl_setpriority</li>
-					<li>pcntl_sigprocmask</li>
-					<li>pcntl_sigwaitinfo</li>
-					<li>pcntl_sigtimedwait</li>
-			</ul>
-	<h2 id="SPL"><a href="#SPL">#</a> PHP SPL library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>spl_classes</li>
-					<li>spl_autoload</li>
-					<li>spl_autoload_extensions</li>
-					<li>spl_autoload_functions</li>
-					<li>spl_autoload_call</li>
-					<li>class_parents</li>
-					<li>class_implements</li>
-					<li>class_uses</li>
-					<li>spl_object_hash</li>
-					<li>iterator_to_array</li>
-					<li>iterator_count</li>
-			</ul>
-	<h2 id="PDO"><a href="#PDO">#</a> PHP PDO library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>pdo_drivers</li>
-			</ul>
-	<h2 id="posix"><a href="#posix">#</a> PHP posix library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>posix_kill</li>
-					<li>posix_getpid</li>
-					<li>posix_getppid</li>
-					<li>posix_getuid</li>
-					<li>posix_setuid</li>
-					<li>posix_geteuid</li>
-					<li>posix_seteuid</li>
-					<li>posix_getgid</li>
-					<li>posix_setgid</li>
-					<li>posix_getegid</li>
-					<li>posix_setegid</li>
-					<li>posix_getgroups</li>
-					<li>posix_getlogin</li>
-					<li>posix_getpgrp</li>
-					<li>posix_setsid</li>
-					<li>posix_setpgid</li>
-					<li>posix_getpgid</li>
-					<li>posix_getsid</li>
-					<li>posix_uname</li>
-					<li>posix_times</li>
-					<li>posix_ctermid</li>
-					<li>posix_ttyname</li>
-					<li>posix_isatty</li>
-					<li>posix_getcwd</li>
-					<li>posix_mkfifo</li>
-					<li>posix_mknod</li>
-					<li>posix_access</li>
-					<li>posix_getgrnam</li>
-					<li>posix_getgrgid</li>
-					<li>posix_getpwnam</li>
-					<li>posix_getpwuid</li>
-					<li>posix_getrlimit</li>
-					<li>posix_get_last_error</li>
-					<li>posix_errno</li>
-					<li>posix_strerror</li>
-					<li>posix_initgroups</li>
-			</ul>
-	<h2 id="readline"><a href="#readline">#</a> PHP readline library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>readline</li>
-					<li>readline_info</li>
-					<li>readline_add_history</li>
-					<li>readline_clear_history</li>
-					<li>readline_list_history</li>
-					<li>readline_read_history</li>
-					<li>readline_write_history</li>
-					<li>readline_completion_function</li>
-					<li>readline_callback_handler_install</li>
-					<li>readline_callback_read_char</li>
-					<li>readline_callback_handler_remove</li>
-					<li>readline_redisplay</li>
-			</ul>
-	<h2 id="session"><a href="#session">#</a> PHP session library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>session_name</li>
-					<li>session_module_name</li>
-					<li>session_save_path</li>
-					<li>session_id</li>
-					<li>session_regenerate_id</li>
-					<li>session_decode</li>
-					<li>session_encode</li>
-					<li>session_start</li>
-					<li>session_destroy</li>
-					<li>session_unset</li>
-					<li>session_set_save_handler</li>
-					<li>session_cache_limiter</li>
-					<li>session_cache_expire</li>
-					<li>session_set_cookie_params</li>
-					<li>session_get_cookie_params</li>
-					<li>session_write_close</li>
-					<li>session_status</li>
-					<li>session_register_shutdown</li>
-					<li>session_commit</li>
-			</ul>
-	<h2 id="shmop"><a href="#shmop">#</a> PHP shmop library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>shmop_open</li>
-					<li>shmop_read</li>
-					<li>shmop_close</li>
-					<li>shmop_size</li>
-					<li>shmop_write</li>
-					<li>shmop_delete</li>
-			</ul>
-	<h2 id="SimpleXML"><a href="#SimpleXML">#</a> PHP SimpleXML library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>simplexml_load_file</li>
-					<li>simplexml_load_string</li>
-					<li>simplexml_import_dom</li>
-			</ul>
-	<h2 id="soap"><a href="#soap">#</a> PHP soap library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>use_soap_error_handler</li>
-					<li>is_soap_fault</li>
-			</ul>
-	<h2 id="sockets"><a href="#sockets">#</a> PHP sockets library: <a href="#">&uarr;</a></h2>
-	<ul>
-					<li>socket_select</li>
-					<li>socket_create</li>
-					<li>socket_create_listen</li>
-					<li>socket_create_pair</li>
-					<li>socket_accept</li>
-					<li>socket_set_nonblock</li>
-					<li>socket_set_block</li>
-					<li>socket_listen</li>
-					<li>socket_close</li>
-					<li>socket_write</li>
-					<li>socket_read</li>
-					<li>socket_getsockname</li>
-					<li>socket_getpeername</li>
-					<li>socket_connect</li>
-					<li>socket_strerror</li>
-					<li>socket_bind</li>
-					<li>socket_recv</li>
-					<li>socket_send</li>
-					<li>socket_recvfrom</li>
-					<li>socket_sendto</li>
-					<li>socket_get_option</li>
-					<li>socket_set_option</li>
-					<li>socket_shutdown</li>
-					<li>socket_last_error</li>
-					<li>socket_clear_error</li>
-					<li>socket_import_stream</li>
-					<li>socket_getopt</li>
-					<li>socket_setopt</li>
-			</ul>
-	<h2 id="standard"><a href="#standard">#</a> PHP standard library: <a href="#">&uarr;</a></h2>
+	<h2 id="standard">
+		<a href="#standard">#</a>
+		PHP standard library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>constant</li>
 					<li>bin2hex</li>
@@ -1517,6 +1428,10 @@
 					<li>getlastmod</li>
 					<li>base64_decode</li>
 					<li>base64_encode</li>
+					<li>password_hash</li>
+					<li>password_get_info</li>
+					<li>password_needs_rehash</li>
+					<li>password_verify</li>
 					<li>convert_uuencode</li>
 					<li>convert_uudecode</li>
 					<li>abs</li>
@@ -1578,10 +1493,18 @@
 					<li>set_time_limit</li>
 					<li>header_register_callback</li>
 					<li>get_cfg_var</li>
+					<li>magic_quotes_runtime</li>
+					<li>set_magic_quotes_runtime</li>
 					<li>get_magic_quotes_gpc</li>
 					<li>get_magic_quotes_runtime</li>
 					<li>error_log</li>
 					<li>error_get_last</li>
+					<li>call_user_func</li>
+					<li>call_user_func_array</li>
+					<li>call_user_method</li>
+					<li>call_user_method_array</li>
+					<li>forward_static_call</li>
+					<li>forward_static_call_array</li>
 					<li>serialize</li>
 					<li>unserialize</li>
 					<li>var_dump</li>
@@ -1590,6 +1513,9 @@
 					<li>print_r</li>
 					<li>memory_get_usage</li>
 					<li>memory_get_peak_usage</li>
+					<li>register_shutdown_function</li>
+					<li>register_tick_function</li>
+					<li>unregister_tick_function</li>
 					<li>highlight_file</li>
 					<li>show_source</li>
 					<li>highlight_string</li>
@@ -1629,6 +1555,7 @@
 					<li>floatval</li>
 					<li>doubleval</li>
 					<li>strval</li>
+					<li>boolval</li>
 					<li>gettype</li>
 					<li>settype</li>
 					<li>is_null</li>
@@ -1706,6 +1633,7 @@
 					<li>stream_set_write_buffer</li>
 					<li>set_file_buffer</li>
 					<li>stream_set_chunk_size</li>
+					<li>set_socket_blocking</li>
 					<li>stream_set_blocking</li>
 					<li>socket_set_blocking</li>
 					<li>stream_get_meta_data</li>
@@ -1777,6 +1705,7 @@
 					<li>closelog</li>
 					<li>lcg_value</li>
 					<li>metaphone</li>
+					<li>ob_start</li>
 					<li>ob_flush</li>
 					<li>ob_clean</li>
 					<li>ob_end_flush</li>
@@ -1797,6 +1726,9 @@
 					<li>arsort</li>
 					<li>sort</li>
 					<li>rsort</li>
+					<li>usort</li>
+					<li>uasort</li>
+					<li>uksort</li>
 					<li>shuffle</li>
 					<li>array_walk</li>
 					<li>array_walk_recursive</li>
@@ -1830,6 +1762,7 @@
 					<li>array_keys</li>
 					<li>array_values</li>
 					<li>array_count_values</li>
+					<li>array_column</li>
 					<li>array_reverse</li>
 					<li>array_reduce</li>
 					<li>array_pad</li>
@@ -1878,7 +1811,494 @@
 					<li>output_reset_rewrite_vars</li>
 					<li>sys_get_temp_dir</li>
 			</ul>
-	<h2 id="sysvmsg"><a href="#sysvmsg">#</a> PHP sysvmsg library: <a href="#">&uarr;</a></h2>
+	<h2 id="mysqlnd">
+		<a href="#mysqlnd">#</a>
+		PHP mysqlnd library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="mysqli">
+		<a href="#mysqli">#</a>
+		PHP mysqli library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>mysqli_affected_rows</li>
+					<li>mysqli_autocommit</li>
+					<li>mysqli_begin_transaction</li>
+					<li>mysqli_change_user</li>
+					<li>mysqli_character_set_name</li>
+					<li>mysqli_close</li>
+					<li>mysqli_commit</li>
+					<li>mysqli_connect</li>
+					<li>mysqli_connect_errno</li>
+					<li>mysqli_connect_error</li>
+					<li>mysqli_data_seek</li>
+					<li>mysqli_dump_debug_info</li>
+					<li>mysqli_debug</li>
+					<li>mysqli_errno</li>
+					<li>mysqli_error</li>
+					<li>mysqli_error_list</li>
+					<li>mysqli_stmt_execute</li>
+					<li>mysqli_execute</li>
+					<li>mysqli_fetch_field</li>
+					<li>mysqli_fetch_fields</li>
+					<li>mysqli_fetch_field_direct</li>
+					<li>mysqli_fetch_lengths</li>
+					<li>mysqli_fetch_all</li>
+					<li>mysqli_fetch_array</li>
+					<li>mysqli_fetch_assoc</li>
+					<li>mysqli_fetch_object</li>
+					<li>mysqli_fetch_row</li>
+					<li>mysqli_field_count</li>
+					<li>mysqli_field_seek</li>
+					<li>mysqli_field_tell</li>
+					<li>mysqli_free_result</li>
+					<li>mysqli_get_connection_stats</li>
+					<li>mysqli_get_client_stats</li>
+					<li>mysqli_get_charset</li>
+					<li>mysqli_get_client_info</li>
+					<li>mysqli_get_client_version</li>
+					<li>mysqli_get_links_stats</li>
+					<li>mysqli_get_host_info</li>
+					<li>mysqli_get_proto_info</li>
+					<li>mysqli_get_server_info</li>
+					<li>mysqli_get_server_version</li>
+					<li>mysqli_get_warnings</li>
+					<li>mysqli_init</li>
+					<li>mysqli_info</li>
+					<li>mysqli_insert_id</li>
+					<li>mysqli_kill</li>
+					<li>mysqli_more_results</li>
+					<li>mysqli_multi_query</li>
+					<li>mysqli_next_result</li>
+					<li>mysqli_num_fields</li>
+					<li>mysqli_num_rows</li>
+					<li>mysqli_options</li>
+					<li>mysqli_ping</li>
+					<li>mysqli_poll</li>
+					<li>mysqli_prepare</li>
+					<li>mysqli_report</li>
+					<li>mysqli_query</li>
+					<li>mysqli_real_connect</li>
+					<li>mysqli_real_escape_string</li>
+					<li>mysqli_real_query</li>
+					<li>mysqli_reap_async_query</li>
+					<li>mysqli_release_savepoint</li>
+					<li>mysqli_rollback</li>
+					<li>mysqli_savepoint</li>
+					<li>mysqli_select_db</li>
+					<li>mysqli_set_charset</li>
+					<li>mysqli_stmt_affected_rows</li>
+					<li>mysqli_stmt_attr_get</li>
+					<li>mysqli_stmt_attr_set</li>
+					<li>mysqli_stmt_bind_param</li>
+					<li>mysqli_stmt_bind_result</li>
+					<li>mysqli_stmt_close</li>
+					<li>mysqli_stmt_data_seek</li>
+					<li>mysqli_stmt_errno</li>
+					<li>mysqli_stmt_error</li>
+					<li>mysqli_stmt_error_list</li>
+					<li>mysqli_stmt_fetch</li>
+					<li>mysqli_stmt_field_count</li>
+					<li>mysqli_stmt_free_result</li>
+					<li>mysqli_stmt_get_result</li>
+					<li>mysqli_stmt_get_warnings</li>
+					<li>mysqli_stmt_init</li>
+					<li>mysqli_stmt_insert_id</li>
+					<li>mysqli_stmt_more_results</li>
+					<li>mysqli_stmt_next_result</li>
+					<li>mysqli_stmt_num_rows</li>
+					<li>mysqli_stmt_param_count</li>
+					<li>mysqli_stmt_prepare</li>
+					<li>mysqli_stmt_reset</li>
+					<li>mysqli_stmt_result_metadata</li>
+					<li>mysqli_stmt_send_long_data</li>
+					<li>mysqli_stmt_store_result</li>
+					<li>mysqli_stmt_sqlstate</li>
+					<li>mysqli_sqlstate</li>
+					<li>mysqli_ssl_set</li>
+					<li>mysqli_stat</li>
+					<li>mysqli_store_result</li>
+					<li>mysqli_thread_id</li>
+					<li>mysqli_thread_safe</li>
+					<li>mysqli_use_result</li>
+					<li>mysqli_warning_count</li>
+					<li>mysqli_refresh</li>
+					<li>mysqli_escape_string</li>
+					<li>mysqli_set_opt</li>
+			</ul>
+	<h2 id="pcntl">
+		<a href="#pcntl">#</a>
+		PHP pcntl library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>pcntl_fork</li>
+					<li>pcntl_waitpid</li>
+					<li>pcntl_wait</li>
+					<li>pcntl_signal</li>
+					<li>pcntl_signal_dispatch</li>
+					<li>pcntl_wifexited</li>
+					<li>pcntl_wifstopped</li>
+					<li>pcntl_wifsignaled</li>
+					<li>pcntl_wexitstatus</li>
+					<li>pcntl_wtermsig</li>
+					<li>pcntl_wstopsig</li>
+					<li>pcntl_exec</li>
+					<li>pcntl_alarm</li>
+					<li>pcntl_get_last_error</li>
+					<li>pcntl_errno</li>
+					<li>pcntl_strerror</li>
+					<li>pcntl_getpriority</li>
+					<li>pcntl_setpriority</li>
+					<li>pcntl_sigprocmask</li>
+					<li>pcntl_sigwaitinfo</li>
+					<li>pcntl_sigtimedwait</li>
+			</ul>
+	<h2 id="mysql">
+		<a href="#mysql">#</a>
+		PHP mysql library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>mysql_connect</li>
+					<li>mysql_pconnect</li>
+					<li>mysql_close</li>
+					<li>mysql_select_db</li>
+					<li>mysql_query</li>
+					<li>mysql_unbuffered_query</li>
+					<li>mysql_db_query</li>
+					<li>mysql_list_dbs</li>
+					<li>mysql_list_tables</li>
+					<li>mysql_list_fields</li>
+					<li>mysql_list_processes</li>
+					<li>mysql_error</li>
+					<li>mysql_errno</li>
+					<li>mysql_affected_rows</li>
+					<li>mysql_insert_id</li>
+					<li>mysql_result</li>
+					<li>mysql_num_rows</li>
+					<li>mysql_num_fields</li>
+					<li>mysql_fetch_row</li>
+					<li>mysql_fetch_array</li>
+					<li>mysql_fetch_assoc</li>
+					<li>mysql_fetch_object</li>
+					<li>mysql_data_seek</li>
+					<li>mysql_fetch_lengths</li>
+					<li>mysql_fetch_field</li>
+					<li>mysql_field_seek</li>
+					<li>mysql_free_result</li>
+					<li>mysql_field_name</li>
+					<li>mysql_field_table</li>
+					<li>mysql_field_len</li>
+					<li>mysql_field_type</li>
+					<li>mysql_field_flags</li>
+					<li>mysql_escape_string</li>
+					<li>mysql_real_escape_string</li>
+					<li>mysql_stat</li>
+					<li>mysql_thread_id</li>
+					<li>mysql_client_encoding</li>
+					<li>mysql_ping</li>
+					<li>mysql_get_client_info</li>
+					<li>mysql_get_host_info</li>
+					<li>mysql_get_proto_info</li>
+					<li>mysql_get_server_info</li>
+					<li>mysql_info</li>
+					<li>mysql_set_charset</li>
+					<li>mysql</li>
+					<li>mysql_fieldname</li>
+					<li>mysql_fieldtable</li>
+					<li>mysql_fieldlen</li>
+					<li>mysql_fieldtype</li>
+					<li>mysql_fieldflags</li>
+					<li>mysql_selectdb</li>
+					<li>mysql_freeresult</li>
+					<li>mysql_numfields</li>
+					<li>mysql_numrows</li>
+					<li>mysql_listdbs</li>
+					<li>mysql_listtables</li>
+					<li>mysql_listfields</li>
+					<li>mysql_db_name</li>
+					<li>mysql_dbname</li>
+					<li>mysql_tablename</li>
+					<li>mysql_table_name</li>
+			</ul>
+	<h2 id="PDO">
+		<a href="#PDO">#</a>
+		PHP PDO library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>pdo_drivers</li>
+			</ul>
+	<h2 id="PDO_Firebird">
+		<a href="#PDO_Firebird">#</a>
+		PHP PDO_Firebird library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="pdo_mysql">
+		<a href="#pdo_mysql">#</a>
+		PHP pdo_mysql library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="pdo_sqlite">
+		<a href="#pdo_sqlite">#</a>
+		PHP pdo_sqlite library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="Phar">
+		<a href="#Phar">#</a>
+		PHP Phar library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="posix">
+		<a href="#posix">#</a>
+		PHP posix library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>posix_kill</li>
+					<li>posix_getpid</li>
+					<li>posix_getppid</li>
+					<li>posix_getuid</li>
+					<li>posix_setuid</li>
+					<li>posix_geteuid</li>
+					<li>posix_seteuid</li>
+					<li>posix_getgid</li>
+					<li>posix_setgid</li>
+					<li>posix_getegid</li>
+					<li>posix_setegid</li>
+					<li>posix_getgroups</li>
+					<li>posix_getlogin</li>
+					<li>posix_getpgrp</li>
+					<li>posix_setsid</li>
+					<li>posix_setpgid</li>
+					<li>posix_getpgid</li>
+					<li>posix_getsid</li>
+					<li>posix_uname</li>
+					<li>posix_times</li>
+					<li>posix_ctermid</li>
+					<li>posix_ttyname</li>
+					<li>posix_isatty</li>
+					<li>posix_getcwd</li>
+					<li>posix_mkfifo</li>
+					<li>posix_mknod</li>
+					<li>posix_access</li>
+					<li>posix_getgrnam</li>
+					<li>posix_getgrgid</li>
+					<li>posix_getpwnam</li>
+					<li>posix_getpwuid</li>
+					<li>posix_getrlimit</li>
+					<li>posix_get_last_error</li>
+					<li>posix_errno</li>
+					<li>posix_strerror</li>
+					<li>posix_initgroups</li>
+			</ul>
+	<h2 id="readline">
+		<a href="#readline">#</a>
+		PHP readline library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>readline</li>
+					<li>readline_info</li>
+					<li>readline_add_history</li>
+					<li>readline_clear_history</li>
+					<li>readline_list_history</li>
+					<li>readline_read_history</li>
+					<li>readline_write_history</li>
+					<li>readline_completion_function</li>
+					<li>readline_callback_handler_install</li>
+					<li>readline_callback_read_char</li>
+					<li>readline_callback_handler_remove</li>
+					<li>readline_redisplay</li>
+			</ul>
+	<h2 id="Reflection">
+		<a href="#Reflection">#</a>
+		PHP Reflection library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="imap">
+		<a href="#imap">#</a>
+		PHP imap library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>imap_open</li>
+					<li>imap_reopen</li>
+					<li>imap_close</li>
+					<li>imap_num_msg</li>
+					<li>imap_num_recent</li>
+					<li>imap_headers</li>
+					<li>imap_headerinfo</li>
+					<li>imap_rfc822_parse_headers</li>
+					<li>imap_rfc822_write_address</li>
+					<li>imap_rfc822_parse_adrlist</li>
+					<li>imap_body</li>
+					<li>imap_bodystruct</li>
+					<li>imap_fetchbody</li>
+					<li>imap_fetchmime</li>
+					<li>imap_savebody</li>
+					<li>imap_fetchheader</li>
+					<li>imap_fetchstructure</li>
+					<li>imap_gc</li>
+					<li>imap_expunge</li>
+					<li>imap_delete</li>
+					<li>imap_undelete</li>
+					<li>imap_check</li>
+					<li>imap_listscan</li>
+					<li>imap_mail_copy</li>
+					<li>imap_mail_move</li>
+					<li>imap_mail_compose</li>
+					<li>imap_createmailbox</li>
+					<li>imap_renamemailbox</li>
+					<li>imap_deletemailbox</li>
+					<li>imap_subscribe</li>
+					<li>imap_unsubscribe</li>
+					<li>imap_append</li>
+					<li>imap_ping</li>
+					<li>imap_base64</li>
+					<li>imap_qprint</li>
+					<li>imap_8bit</li>
+					<li>imap_binary</li>
+					<li>imap_utf8</li>
+					<li>imap_status</li>
+					<li>imap_mailboxmsginfo</li>
+					<li>imap_setflag_full</li>
+					<li>imap_clearflag_full</li>
+					<li>imap_sort</li>
+					<li>imap_uid</li>
+					<li>imap_msgno</li>
+					<li>imap_list</li>
+					<li>imap_lsub</li>
+					<li>imap_fetch_overview</li>
+					<li>imap_alerts</li>
+					<li>imap_errors</li>
+					<li>imap_last_error</li>
+					<li>imap_search</li>
+					<li>imap_utf7_decode</li>
+					<li>imap_utf7_encode</li>
+					<li>imap_utf8_to_mutf7</li>
+					<li>imap_mutf7_to_utf8</li>
+					<li>imap_mime_header_decode</li>
+					<li>imap_thread</li>
+					<li>imap_timeout</li>
+					<li>imap_get_quota</li>
+					<li>imap_get_quotaroot</li>
+					<li>imap_set_quota</li>
+					<li>imap_setacl</li>
+					<li>imap_getacl</li>
+					<li>imap_mail</li>
+					<li>imap_header</li>
+					<li>imap_listmailbox</li>
+					<li>imap_getmailboxes</li>
+					<li>imap_scanmailbox</li>
+					<li>imap_listsubscribed</li>
+					<li>imap_getsubscribed</li>
+					<li>imap_fetchtext</li>
+					<li>imap_scan</li>
+					<li>imap_create</li>
+					<li>imap_rename</li>
+			</ul>
+	<h2 id="shmop">
+		<a href="#shmop">#</a>
+		PHP shmop library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>shmop_open</li>
+					<li>shmop_read</li>
+					<li>shmop_close</li>
+					<li>shmop_size</li>
+					<li>shmop_write</li>
+					<li>shmop_delete</li>
+			</ul>
+	<h2 id="SimpleXML">
+		<a href="#SimpleXML">#</a>
+		PHP SimpleXML library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>simplexml_load_file</li>
+					<li>simplexml_load_string</li>
+					<li>simplexml_import_dom</li>
+			</ul>
+	<h2 id="soap">
+		<a href="#soap">#</a>
+		PHP soap library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>use_soap_error_handler</li>
+					<li>is_soap_fault</li>
+			</ul>
+	<h2 id="sockets">
+		<a href="#sockets">#</a>
+		PHP sockets library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>socket_select</li>
+					<li>socket_create</li>
+					<li>socket_create_listen</li>
+					<li>socket_create_pair</li>
+					<li>socket_accept</li>
+					<li>socket_set_nonblock</li>
+					<li>socket_set_block</li>
+					<li>socket_listen</li>
+					<li>socket_close</li>
+					<li>socket_write</li>
+					<li>socket_read</li>
+					<li>socket_getsockname</li>
+					<li>socket_getpeername</li>
+					<li>socket_connect</li>
+					<li>socket_strerror</li>
+					<li>socket_bind</li>
+					<li>socket_recv</li>
+					<li>socket_send</li>
+					<li>socket_recvfrom</li>
+					<li>socket_sendto</li>
+					<li>socket_get_option</li>
+					<li>socket_set_option</li>
+					<li>socket_shutdown</li>
+					<li>socket_last_error</li>
+					<li>socket_clear_error</li>
+					<li>socket_import_stream</li>
+					<li>socket_sendmsg</li>
+					<li>socket_recvmsg</li>
+					<li>socket_cmsg_space</li>
+					<li>socket_getopt</li>
+					<li>socket_setopt</li>
+			</ul>
+	<h2 id="exif">
+		<a href="#exif">#</a>
+		PHP exif library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>exif_read_data</li>
+					<li>read_exif_data</li>
+					<li>exif_tagname</li>
+					<li>exif_thumbnail</li>
+					<li>exif_imagetype</li>
+			</ul>
+	<h2 id="sysvmsg">
+		<a href="#sysvmsg">#</a>
+		PHP sysvmsg library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>msg_get_queue</li>
 					<li>msg_send</li>
@@ -1888,14 +2308,22 @@
 					<li>msg_set_queue</li>
 					<li>msg_queue_exists</li>
 			</ul>
-	<h2 id="sysvsem"><a href="#sysvsem">#</a> PHP sysvsem library: <a href="#">&uarr;</a></h2>
+	<h2 id="sysvsem">
+		<a href="#sysvsem">#</a>
+		PHP sysvsem library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>sem_get</li>
 					<li>sem_acquire</li>
 					<li>sem_release</li>
 					<li>sem_remove</li>
 			</ul>
-	<h2 id="sysvshm"><a href="#sysvshm">#</a> PHP sysvshm library: <a href="#">&uarr;</a></h2>
+	<h2 id="sysvshm">
+		<a href="#sysvshm">#</a>
+		PHP sysvshm library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>shm_attach</li>
 					<li>shm_remove</li>
@@ -1905,7 +2333,11 @@
 					<li>shm_get_var</li>
 					<li>shm_remove_var</li>
 			</ul>
-	<h2 id="tidy"><a href="#tidy">#</a> PHP tidy library: <a href="#">&uarr;</a></h2>
+	<h2 id="tidy">
+		<a href="#tidy">#</a>
+		PHP tidy library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>tidy_getopt</li>
 					<li>tidy_parse_string</li>
@@ -1932,12 +2364,20 @@
 					<li>tidy_get_html</li>
 					<li>tidy_get_body</li>
 			</ul>
-	<h2 id="tokenizer"><a href="#tokenizer">#</a> PHP tokenizer library: <a href="#">&uarr;</a></h2>
+	<h2 id="tokenizer">
+		<a href="#tokenizer">#</a>
+		PHP tokenizer library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>token_get_all</li>
 					<li>token_name</li>
 			</ul>
-	<h2 id="wddx"><a href="#wddx">#</a> PHP wddx library: <a href="#">&uarr;</a></h2>
+	<h2 id="wddx">
+		<a href="#wddx">#</a>
+		PHP wddx library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>wddx_serialize_value</li>
 					<li>wddx_serialize_vars</li>
@@ -1946,7 +2386,11 @@
 					<li>wddx_add_vars</li>
 					<li>wddx_deserialize</li>
 			</ul>
-	<h2 id="xml"><a href="#xml">#</a> PHP xml library: <a href="#">&uarr;</a></h2>
+	<h2 id="xml">
+		<a href="#xml">#</a>
+		PHP xml library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>xml_parser_create</li>
 					<li>xml_parser_create_ns</li>
@@ -1973,7 +2417,18 @@
 					<li>utf8_encode</li>
 					<li>utf8_decode</li>
 			</ul>
-	<h2 id="xmlrpc"><a href="#xmlrpc">#</a> PHP xmlrpc library: <a href="#">&uarr;</a></h2>
+	<h2 id="xmlreader">
+		<a href="#xmlreader">#</a>
+		PHP xmlreader library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="xmlrpc">
+		<a href="#xmlrpc">#</a>
+		PHP xmlrpc library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>xmlrpc_encode</li>
 					<li>xmlrpc_decode</li>
@@ -1984,11 +2439,17 @@
 					<li>xmlrpc_is_fault</li>
 					<li>xmlrpc_server_create</li>
 					<li>xmlrpc_server_destroy</li>
+					<li>xmlrpc_server_register_method</li>
 					<li>xmlrpc_server_call_method</li>
 					<li>xmlrpc_parse_method_descriptions</li>
 					<li>xmlrpc_server_add_introspection_data</li>
+					<li>xmlrpc_server_register_introspection_callback</li>
 			</ul>
-	<h2 id="xmlwriter"><a href="#xmlwriter">#</a> PHP xmlwriter library: <a href="#">&uarr;</a></h2>
+	<h2 id="xmlwriter">
+		<a href="#xmlwriter">#</a>
+		PHP xmlwriter library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>xmlwriter_open_uri</li>
 					<li>xmlwriter_open_memory</li>
@@ -2033,7 +2494,18 @@
 					<li>xmlwriter_output_memory</li>
 					<li>xmlwriter_flush</li>
 			</ul>
-	<h2 id="zip"><a href="#zip">#</a> PHP zip library: <a href="#">&uarr;</a></h2>
+	<h2 id="xsl">
+		<a href="#xsl">#</a>
+		PHP xsl library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="zip">
+		<a href="#zip">#</a>
+		PHP zip library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 					<li>zip_open</li>
 					<li>zip_close</li>
@@ -2045,4 +2517,38 @@
 					<li>zip_entry_name</li>
 					<li>zip_entry_compressedsize</li>
 					<li>zip_entry_compressionmethod</li>
+			</ul>
+	<h2 id="litespeed">
+		<a href="#litespeed">#</a>
+		PHP litespeed library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+					<li>litespeed_request_headers</li>
+					<li>litespeed_response_headers</li>
+					<li>apache_get_modules</li>
+					<li>getallheaders</li>
+					<li>apache_request_headers</li>
+					<li>apache_response_headers</li>
+			</ul>
+	<h2 id="imagick">
+		<a href="#imagick">#</a>
+		PHP imagick library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="timezonedb">
+		<a href="#timezonedb">#</a>
+		PHP timezonedb library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
+			</ul>
+	<h2 id="mhash">
+		<a href="#mhash">#</a>
+		PHP mhash library:
+		<a href="#">&uarr;</a>
+	</h2>
+	<ul>
 			</ul>
