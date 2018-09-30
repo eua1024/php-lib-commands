@@ -33,7 +33,7 @@
 </style>
 
 <h1>Commands list of php-libraries</h1>
-<a href="https://github.com/eua1024/php-library-commands">https://github.com/eua1024/php-library-commands</a>
+<a href="https://github.com/eua1024/php-lib-commands">https://github.com/eua1024/php-lib-commands</a>
 
 <h2>PHP version: <?php echo PHP_VERSION; ?></h2>
 <div id="lib_list">
