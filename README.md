@@ -1,5 +1,4 @@
 # Commands list of php-libraries
-Get a list of commands in php-libraries
 
 ## Cache
 https://eua1024.github.io/php-lib-commands
