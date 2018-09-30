@@ -44,7 +44,11 @@
 </div>
 
 <?php foreach ($result as $lib_name => $lib_commands): ?>
-	<h2 id="<?php echo $lib_name; ?>">PHP <?php echo $lib_name; ?> library: <a href="#">&uarr;</a></h2>
+	<h2 id="<?php echo $lib_name; ?>">
+		<a href="#<?php echo $lib_name; ?>">#</a>
+		PHP <?php echo $lib_name; ?> library:
+		<a href="#">&uarr;</a>
+	</h2>
 	<ul>
 		<?php foreach ($lib_commands as $command): ?>
 			<li><?php echo $command; ?></li>
