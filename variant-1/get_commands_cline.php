@@ -1,8 +1,8 @@
 <?php
-	$list = get_defined_functions();
+	$clist = get_defined_functions();
 
-	$result = [];
-	foreach ($list['internal'] as $item) {
+	$result = array();
+	foreach ($clist['internal'] as $item) {
 		if (preg_match_all("/Function \[ <internal:(.*)> function (.*) \] {/", exec("php --rf ".$item." | grep function"), $matches)) {
 			$result[$matches[1][0]][] = $matches[2][0];
 		}
