@@ -2,7 +2,7 @@
 Get a list of commands in php-libraries
 
 ## Cache
-https://github.com/eua1024/php-lib-commands
+https://eua1024.github.io/php-lib-commands
 
 ## Usage
 ### HTML version:
